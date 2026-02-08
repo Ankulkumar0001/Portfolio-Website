@@ -1,0 +1,2107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankul kumar - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="/cropped_circle_image.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+
+<body class="bg-gray-50 overflow-x-hidden">
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
+    </style>
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-gray-950/95 backdrop-blur-sm shadow-md z-40 border-b border-gray-800">
+        <div class="container mx-auto px-4 md:px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"
+                        style="font-family: 'Pacifico', cursive;">Ankul kumar</h1>
+                </div>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#home"
+                            class="nav-link text-gray-300 hover:text-indigo-400 hover:scale-105 transition relative group font-bold ">Home<span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 group-hover:w-full transition-all duration-300"></span></a>
+                    </li>
+                    <li><a href="#about"
+                            class="nav-link text-gray-300 hover:text-indigo-400 hover:scale-105 transition relative group font-bold ">About<span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 group-hover:w-full transition-all duration-300"></span></a>
+                    </li>
+                    <li><a href="#education"
+                            class="nav-link text-gray-300 hover:text-indigo-400 hover:scale-105 transition relative group font-bold ">Education<span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 group-hover:w-full transition-all duration-300"></span></a>
+                    </li>
+                    <li><a href="#experience"
+                            class="nav-link text-gray-300 hover:text-indigo-400 hover:scale-105 transition relative group font-bold ">Experience<span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 group-hover:w-full transition-all duration-300"></span></a>
+                    </li>
+                    <li><a href="#projects"
+                            class="nav-link text-gray-300 hover:text-indigo-400 hover:scale-105 transition relative group font-bold ">Projects<span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 group-hover:w-full transition-all duration-300"></span></a>
+                    </li>
+                    <li><a href="#certificates"
+                            class="nav-link text-gray-300 hover:text-indigo-400 hover:scale-105 transition relative group font-bold ">Certificates<span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 group-hover:w-full transition-all duration-300"></span></a>
+                    </li>
+                    <li><a href="#gallery"
+                            class="nav-link text-gray-300 hover:text-indigo-400 hover:scale-105 transition relative group font-bold ">Gallery<span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 group-hover:w-full transition-all duration-300"></span></a>
+                    </li>
+                    <li><a href="#contact"
+                            class="nav-link text-gray-300 hover:text-indigo-400 hover:scale-105 transition relative group font-bold ">Contact<span
+                                class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 group-hover:w-full transition-all duration-300"></span></a>
+                    </li>
+                </ul>
+                <button id="menuBtn"
+                    class="md:hidden text-gray-300 hover:text-indigo-400 transition transform active:scale-90 active:rotate-90">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Off-Canvas Mobile Menu -->
+    <div id="offCanvas" class="fixed inset-0 z-50 hidden">
+        <div id="overlay"
+            class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300 opacity-0"></div>
+        <div id="menuPanel"
+            class="absolute top-0 right-0 h-full w-72 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 overflow-y-auto flex flex-col">
+            <div class="p-6 flex-1">
+                <button id="closeBtn"
+                    class="absolute top-5 right-5 w-9 h-9 bg-red-500 hover:bg-red-600 rounded-full text-white flex items-center justify-center hover:rotate-90 transition-all duration-300 shadow-lg z-10">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <div class="mb-8 mt-2">
+                    <h2
+                        class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                        Menu</h2>
+                    <div class="h-0.5 w-12 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full mt-2"></div>
+                </div>
+                <ul class="space-y-3 mb-8">
+                    <li><a href="#home"
+                            class="flex items-center gap-3 text-base text-gray-700 hover:text-indigo-600 bg-gray-50 hover:bg-indigo-50 px-4 py-3 rounded-lg hover:translate-x-1 transition-all menu-link font-semibold border border-transparent hover:border-indigo-200">
+                            <i class="fas fa-home text-indigo-600 w-5"></i>
+                            <span>Home</span>
+                        </a></li>
+                    <li><a href="#about"
+                            class="flex items-center gap-3 text-base text-gray-700 hover:text-indigo-600 bg-gray-50 hover:bg-indigo-50 px-4 py-3 rounded-lg hover:translate-x-1 transition-all menu-link font-semibold border border-transparent hover:border-indigo-200">
+                            <i class="fas fa-user text-indigo-600 w-5"></i>
+                            <span>About</span>
+                        </a></li>
+                    <li><a href="#education"
+                            class="flex items-center gap-3 text-base text-gray-700 hover:text-indigo-600 bg-gray-50 hover:bg-indigo-50 px-4 py-3 rounded-lg hover:translate-x-1 transition-all menu-link font-semibold border border-transparent hover:border-indigo-200">
+                            <i class="fas fa-graduation-cap text-indigo-600 w-5"></i>
+                            <span>Education</span>
+                        </a></li>
+                    <li><a href="#experience"
+                            class="flex items-center gap-3 text-base text-gray-700 hover:text-indigo-600 bg-gray-50 hover:bg-indigo-50 px-4 py-3 rounded-lg hover:translate-x-1 transition-all menu-link font-semibold border border-transparent hover:border-indigo-200">
+                            <i class="fas fa-briefcase text-indigo-600 w-5"></i>
+                            <span>Experience</span>
+                        </a></li>
+                    <li><a href="#projects"
+                            class="flex items-center gap-3 text-base text-gray-700 hover:text-indigo-600 bg-gray-50 hover:bg-indigo-50 px-4 py-3 rounded-lg hover:translate-x-1 transition-all menu-link font-semibold border border-transparent hover:border-indigo-200">
+                            <i class="fas fa-project-diagram text-indigo-600 w-5"></i>
+                            <span>Projects</span>
+                        </a></li>
+                    <li><a href="#certificates"
+                            class="flex items-center gap-3 text-base text-gray-700 hover:text-indigo-600 bg-gray-50 hover:bg-indigo-50 px-4 py-3 rounded-lg hover:translate-x-1 transition-all menu-link font-semibold border border-transparent hover:border-indigo-200">
+                            <i class="fas fa-certificate text-indigo-600 w-5"></i>
+                            <span>Certificates</span>
+                        </a></li>
+                    <li><a href="#gallery"
+                            class="flex items-center gap-3 text-base text-gray-700 hover:text-indigo-600 bg-gray-50 hover:bg-indigo-50 px-4 py-3 rounded-lg hover:translate-x-1 transition-all menu-link font-semibold border border-transparent hover:border-indigo-200">
+                            <i class="fas fa-images text-indigo-600 w-5"></i>
+                            <span>Gallery</span>
+                        </a></li>
+                    <li><a href="#contact"
+                            class="flex items-center gap-3 text-base text-gray-700 hover:text-indigo-600 bg-gray-50 hover:bg-indigo-50 px-4 py-3 rounded-lg hover:translate-x-1 transition-all menu-link font-semibold border border-transparent hover:border-indigo-200">
+                            <i class="fas fa-envelope text-indigo-600 w-5"></i>
+                            <span>Contact</span>
+                        </a></li>
+                </ul>
+                <div
+                    class="bg-gradient-to-br from-indigo-50 to-purple-50 p-4 rounded-xl border-2 border-indigo-200 relative overflow-hidden">
+                    <div class="flex items-start gap-3 mb-2">
+                        <i class="fas fa-lightbulb text-yellow-500 text-xl mt-1"></i>
+                        <div class="flex-1">
+                            <h3 class="text-sm font-bold text-indigo-600 mb-1">💡 Fun Fact</h3>
+                            <p class="text-xs text-gray-700 leading-relaxed">Did you know? The first computer bug was an
+                                actual bug! In 1947, a moth got trapped in a computer at Harvard University. 🦋</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-end gap-2 mt-3">
+                        <button id="funFactLikeBtn"
+                            class="flex items-center gap-1.5 bg-white hover:bg-red-50 px-3 py-1.5 rounded-full border border-indigo-200 hover:border-red-300 transition-all duration-300 group">
+                            <i id="funFactHeart"
+                                class="far fa-heart text-gray-500 group-hover:text-red-500 transition-colors"></i>
+                            <span id="funFactLikeCount"
+                                class="text-xs font-bold text-gray-700 group-hover:text-red-500 transition-colors">0</span>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 h-8 flex items-end overflow-hidden">
+                        <svg class="wave-animation" style="width: 200%; height: 100%;" viewBox="0 0 1200 120"
+                            preserveAspectRatio="none">
+                            <path d="M0,0 C150,50 350,0 600,50 C850,100 1050,50 1200,0 L1200,120 L0,120 Z"
+                                fill="url(#waveGradient)" opacity="0.3"></path>
+                        </svg>
+                        <svg class="wave-animation"
+                            style="width: 200%; height: 100%; position: absolute; animation-delay: -1s;"
+                            viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M0,20 C150,70 350,20 600,70 C850,120 1050,70 1200,20 L1200,120 L0,120 Z"
+                                fill="url(#waveGradient)" opacity="0.2"></path>
+                        </svg>
+                        <defs>
+                            <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Wave Animation -->
+            <div class="relative h-24 overflow-hidden bg-gradient-to-br from-indigo-50 to-purple-50">
+                <svg class="wave-animation absolute bottom-0" style="width: 200%; height: 100%;" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M0,40 C150,80 350,40 600,80 C850,120 1050,80 1200,40 L1200,120 L0,120 Z"
+                        fill="url(#menuWaveGradient)" opacity="0.6"></path>
+                </svg>
+                <svg class="wave-animation absolute bottom-0" style="width: 200%; height: 100%; animation-delay: -1.5s;"
+                    viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,60 C150,100 350,60 600,100 C850,140 1050,100 1200,60 L1200,120 L0,120 Z"
+                        fill="url(#menuWaveGradient)" opacity="0.4"></path>
+                </svg>
+                <svg class="wave-animation absolute bottom-0" style="width: 200%; height: 100%; animation-delay: -3s;"
+                    viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,80 C150,120 350,80 600,120 C850,160 1050,120 1200,80 L1200,120 L0,120 Z"
+                        fill="url(#menuWaveGradient)" opacity="0.3"></path>
+                </svg>
+                <defs>
+                    <linearGradient id="menuWaveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#home" id="backToTop"
+        class="fixed bottom-5 right-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-lg transition-all duration-300 hover:scale-110 z-50 opacity-0 invisible flex items-center justify-center"
+        style="width: 40px; height: 40px; border-radius: 50%;">
+        <i class="fas fa-arrow-up text-base"></i>
+    </a>
+
+    <!-- Fixed WhatsApp & Phone Icons -->
+    <div class="fixed bottom-6 left-6 flex flex-col gap-3 z-50">
+        <a href="https://wa.me/8869882358"
+            class="bg-green-500 hover:bg-green-600 hover:scale-105 text-white p-3 rounded-full shadow-lg transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+        </a>
+        <a href="tel:8869882358"
+            class="bg-blue-500 hover:bg-blue-600 hover:scale-105 text-white p-3 rounded-full shadow-lg transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- Fixed Share Button -->
+    <div class="fixed right-7 top-1/2 -translate-y-1/2 z-50" style="margin-top: 5px;">
+        <div class="relative">
+            <!-- Social Links (Hidden by default) -->
+            <div id="socialLinks" class="absolute right-14 top-1/2 -translate-y-1/2 transition-all duration-300">
+                <a href="https://www.facebook.com/ankulsingh4861" id="link1"
+                    class="absolute bg-blue-600 text-white shadow-lg transition-all duration-300 flex items-center justify-center"
+                    style="right: 0; top: 0; opacity: 0; transform: translateX(50px); width: 35px; height: 35px; border-radius: 50%; margin: 10px;">
+                    <span class="absolute inset-0 rounded-full bg-blue-400 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-blue-400 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-blue-400 radiation-wave"></span>
+                    <i class="fab fa-facebook-f relative z-10 text-sm"></i>
+                </a>
+                <a href="https://x.com/ankulkumar0001" id="link2"
+                    class="absolute bg-sky-500 text-white shadow-lg transition-all duration-300 flex items-center justify-center"
+                    style="right: 0; top: 0; opacity: 0; transform: translateX(50px); width: 35px; height: 35px; border-radius: 50%; margin: 10px;">
+                    <span class="absolute inset-0 rounded-full bg-sky-300 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-sky-300 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-sky-300 radiation-wave"></span>
+                    <i class="fab fa-twitter relative z-10 text-sm"></i>
+                </a>
+                <a href="https://www.instagram.com/ankul_singh4861" id="link3"
+                    class="absolute bg-pink-600 text-white shadow-lg transition-all duration-300 flex items-center justify-center"
+                    style="right: 0; top: 0; opacity: 0; transform: translateX(50px); width: 35px; height: 35px; border-radius: 50%; margin: 10px;">
+                    <span class="absolute inset-0 rounded-full bg-pink-400 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-pink-400 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-pink-400 radiation-wave"></span>
+                    <i class="fab fa-instagram relative z-10 text-sm"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ankul-kumar-9a9016322" id="link4"
+                    class="absolute bg-blue-700 text-white shadow-lg transition-all duration-300 flex items-center justify-center"
+                    style="right: 0; top: 0; opacity: 0; transform: translateX(50px); width: 35px; height: 35px; border-radius: 50%; margin: 10px;">
+                    <span class="absolute inset-0 rounded-full bg-blue-500 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-blue-500 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-blue-500 radiation-wave"></span>
+                    <i class="fab fa-linkedin-in relative z-10 text-sm"></i>
+                </a>
+                <a href="https://wa.me/8869882358" id="link5"
+                    class="absolute bg-green-600 text-white shadow-lg transition-all duration-300 flex items-center justify-center"
+                    style="right: 0; top: 0; opacity: 0; transform: translateX(50px); width: 35px; height: 35px; border-radius: 50%; margin: 10px;">
+                    <span class="absolute inset-0 rounded-full bg-green-400 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-green-400 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-green-400 radiation-wave"></span>
+                    <i class="fab fa-whatsapp relative z-10 text-sm"></i>
+                </a>
+                <a href="https://github.com/Ankulkumar0001" id="link6"
+                    class="absolute bg-gray-800 text-white shadow-lg transition-all duration-300 flex items-center justify-center"
+                    style="right: 0; top: 0; opacity: 0; transform: translateX(50px); width: 35px; height: 35px; border-radius: 50%; margin: 10px;">
+                    <span class="absolute inset-0 rounded-full bg-gray-600 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-gray-600 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-gray-600 radiation-wave"></span>
+                    <i class="fab fa-github relative z-10 text-sm"></i>
+                </a>
+                <a href="tg://user?id=8869882358" id="link7"
+                    class="absolute bg-purple-600 text-white shadow-lg transition-all duration-300 flex items-center justify-center"
+                    style="right: 0; top: 0; opacity: 0; transform: translateX(50px); width: 35px; height: 35px; border-radius: 50%; margin: 10px;">
+                    <span class="absolute inset-0 rounded-full bg-purple-400 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-purple-400 radiation-wave"></span>
+                    <span class="absolute inset-0 rounded-full bg-purple-400 radiation-wave"></span>
+                    <i class="fab fa-telegram relative z-10 text-sm"></i>
+                </a>
+            </div>
+            <!-- Share Button -->
+            <button id="shareBtn"
+                class="bg-indigo-600 hover:bg-indigo-700 hover:scale-105 text-white shadow-lg transition relative flex items-center justify-center"
+                style="width: 40px; height: 40px; border-radius: 50%;">
+                <span id="wave1" class="absolute inset-0 rounded-full bg-indigo-400 radiation-wave"></span>
+                <span id="wave2" class="absolute inset-0 rounded-full bg-indigo-400 radiation-wave"></span>
+                <span id="wave3" class="absolute inset-0 rounded-full bg-indigo-400 radiation-wave"></span>
+                <i class="fas fa-share-alt relative z-10 animate-pulse"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Modal -->
+    <div id="imageLightbox"
+        class="fixed inset-0 bg-black/95 backdrop-blur-sm z-50 hidden items-center justify-center transition-all duration-300 opacity-0">
+        <button id="closeLightbox"
+            class="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full text-white text-2xl hover:rotate-90 transition-all duration-300 flex items-center justify-center">
+            <i class="fas fa-times"></i>
+        </button>
+        <button id="prevImage"
+            class="absolute left-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full text-white text-xl hover:scale-110 transition-all duration-300 md:flex items-center justify-center hidden">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="nextImage"
+            class="absolute right-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full text-white text-xl hover:scale-110 transition-all duration-300 md:flex items-center justify-center hidden">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <button id="lightboxLikeBtn"
+            class="absolute top-6 left-6 bg-white/10 hover:bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full transition-all duration-300 items-center gap-2 hidden">
+            <i id="lightboxHeart" class="far fa-heart text-red-500 text-xl"></i>
+            <span id="lightboxLikeCount" class="text-white font-bold">0</span>
+        </button>
+        <div class="relative max-w-[90%] max-h-[90%] flex flex-col items-center">
+            <img id="lightboxImage" src="" alt=""
+                class="max-w-full max-h-[70vh] md:max-h-[90vh] object-contain rounded-lg shadow-2xl transform transition-all duration-500 scale-90">
+            <div id="imageCounter"
+                class="absolute md:bottom-4 -bottom-16 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm">
+            </div>
+            <!-- Mobile Navigation Buttons -->
+            <div class="flex md:hidden gap-4 mt-6">
+                <button id="prevImageMobile"
+                    class="w-14 h-14 bg-white/10 hover:bg-white/20 rounded-full text-white text-xl hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="nextImageMobile"
+                    class="w-14 h-14 bg-white/10 hover:bg-white/20 rounded-full text-white text-xl hover:scale-110 transition-all duration-300 flex items-center justify-center">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Image Modal -->
+    <div id="experienceModal"
+        class="fixed inset-0 bg-white/95 backdrop-blur-sm z-50 hidden items-center justify-center transition-all duration-300 opacity-0 overflow-y-auto md:overflow-hidden py-6 md:py-0">
+        <button id="closeExpModal"
+            class="fixed md:absolute top-6 right-6 w-14 h-14 bg-gradient-to-br from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 rounded-full text-white text-2xl hover:rotate-90 transition-all duration-300 flex items-center justify-center shadow-2xl z-50">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="container mx-auto max-w-5xl px-4 md:px-6 my-auto">
+            <div
+                class="grid md:grid-cols-2 gap-6 bg-white backdrop-blur-xl rounded-3xl p-5 md:p-6 border border-gray-200 shadow-2xl md:max-h-[80vh] md:overflow-hidden">
+                <!-- Left: Image Preview -->
+                <div class="relative flex flex-col">
+                    <div class="relative overflow-hidden rounded-2xl shadow-xl border-2 border-gray-200">
+                        <img id="expModalImage" src="" alt=""
+                            class="w-full h-auto object-contain bg-gray-50 transition-all duration-500 max-h-[45vh]">
+                    </div>
+                    <div class="flex gap-3 mt-4 justify-center items-center">
+                        <button id="prevExpImage"
+                            class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 rounded-full text-white text-lg hover:scale-110 transition-all duration-300 flex items-center justify-center shadow-lg">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div id="expImageCounter"
+                            class="bg-gray-100 text-gray-800 px-5 py-2 rounded-full text-sm font-bold flex items-center border border-gray-300 shadow-md min-w-[70px] justify-center">
+                        </div>
+                        <button id="nextExpImage"
+                            class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 rounded-full text-white text-lg hover:scale-110 transition-all duration-300 flex items-center justify-center shadow-lg">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Right: Description -->
+                <div class="text-gray-800 md:overflow-y-auto md:max-h-[65vh] custom-scrollbar md:pr-2">
+                    <div class="space-y-4">
+                        <h3 id="expModalTitle"
+                            class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight">
+                        </h3>
+                        <div id="expModalCompany"
+                            class="flex items-center gap-3 bg-gradient-to-r from-indigo-50 to-purple-50 backdrop-blur-md p-3 rounded-xl border border-indigo-200 shadow-md">
+                            <img id="expModalLogo" src="" alt=""
+                                class="h-14 w-14 rounded-full border-3 border-indigo-400 shadow-lg object-cover">
+                            <div>
+                                <p id="expModalCompanyName" class="font-bold text-lg text-gray-900"></p>
+                                <p id="expModalLocation" class="text-sm text-gray-600 flex items-center gap-2 mt-1"></p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                            <p id="expModalDesc" class="text-gray-700 leading-relaxed text-justify text-sm"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="projectModal"
+        class="fixed inset-0 bg-white/95 backdrop-blur-sm z-50 hidden items-center justify-center transition-all duration-300 opacity-0">
+        <button id="closeProjectModal"
+            class="absolute top-6 right-6 w-14 h-14 bg-gradient-to-br from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 rounded-full text-white text-2xl hover:rotate-90 transition-all duration-300 flex items-center justify-center shadow-2xl z-50">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="container mx-auto px-4 md:px-6" style="max-width: 600px;">
+            <div
+                class="bg-white backdrop-blur-xl rounded-3xl p-5 md:p-6 border border-gray-200 shadow-2xl max-h-[85vh] overflow-y-auto custom-scrollbar">
+                <div class="space-y-5">
+                    <div class="relative overflow-hidden rounded-2xl shadow-xl border-2 border-gray-200"
+                        id="projectModalIcon">
+                        <img id="projectModalImage" src="" alt="" class="w-full " style="display: none; height: 280px;">
+                        <div id="projectModalIconContainer" class="flex items-center justify-center"
+                            style="height: 250px;">
+                            <i id="projectModalIconEl" class="text-7xl text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 id="projectModalTitle"
+                            class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight mb-4">
+                        </h3>
+                        <div id="projectModalTags" class="flex gap-2 flex-wrap mb-5"></div>
+                        <div class="bg-gray-50 p-5 rounded-xl border border-gray-200">
+                            <p id="projectModalDesc" class="text-gray-700 leading-relaxed text-justify"></p>
+                        </div>
+                        <a id="projectModalLink" href="#" target="_blank"
+                            class="inline-flex items-center gap-2 mt-6 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-bold transition-all hover:scale-105 shadow-lg">
+                            View Live Project <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #6366f1, #a855f7);
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #4f46e5, #9333ea);
+        }
+    </style>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center bg-gray-950 px-6 py-20 pt-32 relative overflow-hidden">
+        <!-- Big Moving Technology Icons -->
+        <div class="absolute inset-0 pointer-events-none z-0">
+            <i
+                class="fab fa-js text-yellow-400 text-5xl md:text-9xl absolute top-10 left-5 animate-float opacity-10"></i>
+            <i
+                class="fab fa-bootstrap text-purple-500 text-5xl md:text-9xl absolute bottom-10 right-5 animate-float-delayed opacity-10"></i>
+            <i
+                class="fab fa-html5 text-orange-500 text-5xl md:text-9xl absolute top-20 right-20 animate-float opacity-10"></i>
+            <i
+                class="fab fa-css3-alt text-blue-500 text-5xl md:text-9xl absolute bottom-20 left-10 animate-float-delayed opacity-10"></i>
+            <i
+                class="fas fa-database text-cyan-400 text-4xl md:text-8xl absolute top-1/2 left-1/4 animate-float opacity-10"></i>
+            <i
+                class="fas fa-code text-indigo-400 text-4xl md:text-8xl absolute bottom-1/4 right-10 animate-float-delayed opacity-10"></i>
+            <i
+                class="fab fa-node text-green-500 text-4xl md:text-8xl absolute top-1/4 left-1/2 animate-float opacity-10"></i>
+            <i
+                class="fab fa-react text-cyan-400 text-4xl md:text-8xl absolute bottom-1/3 right-1/4 animate-float-delayed opacity-10"></i>
+            <i
+                class="fab fa-git-alt text-orange-600 text-3xl md:text-7xl absolute top-2/3 left-1/3 animate-float opacity-10"></i>
+            <i
+                class="fab fa-github text-gray-400 text-3xl md:text-7xl absolute bottom-10 left-1/2 animate-float-delayed opacity-10"></i>
+        </div>
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div class="text-center md:text-left">
+                    <p class="text-lg text-gray-300 mb-2"><span id="greeting"
+                            class="greeting font-bold text-white">Hello</span> There 👋🏿 I'M</p>
+                    <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">Ankul kumar</h1>
+                    <h1
+                        class="text-4xl font-semibold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent mb-8">
+                        Full Stack Developer</h1>
+                    <a href="tel:8869882358"
+                        class="text-xl flex items-center gap-2 justify-center md:justify-start text-gray-300 hover:text-white transition">
+                        <i class="fas fa-phone animate-bounce text-indigo-400"></i> +91 8869882358
+                    </a>
+                    <a href="mailto:ankul.kumar@info0001.com"
+                        class="text-xl flex items-center gap-2 justify-center md:justify-start text-gray-300 hover:text-white transition">
+                        <i class="fas fa-envelope animate-pulse text-indigo-400"></i> ankul.kumar@info0001.com
+                    </a> <br>
+                    <a href="Resume.pdf" download="Ankul_Kumar_Resume.pdf"
+                        class="group relative inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden">
+                        <span
+                            class="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                        <i class="fas fa-download relative z-10 group-hover:animate-bounce"></i>
+                        <span class="relative z-10">Download Resume</span>
+                    </a>
+                </div>
+                <div class="flex justify-center">
+                    <div
+                        class="w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-indigo-500/30 shadow-2xl hero-image-tilt">
+                        <img src="/image2.png " alt="Ankul kumar" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about"
+        class="py-20 px-6 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-indigo-400 rounded-full blur-3xl animate-float"></div>
+            <div
+                class="absolute bottom-20 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl animate-float-delayed">
+            </div>
+        </div>
+        <!-- Floating Skill Icons -->
+        <div class="absolute inset-0 pointer-events-none">
+            <i
+                class="fab fa-html5 text-orange-500 text-4xl absolute top-20 left-1/4 animate-float-icon-1 opacity-20"></i>
+            <i
+                class="fab fa-css3-alt text-blue-500 text-4xl absolute top-40 right-1/4 animate-float-icon-2 opacity-20"></i>
+            <i
+                class="fab fa-js text-yellow-500 text-4xl absolute bottom-40 left-1/3 animate-float-icon-3 opacity-20"></i>
+            <i
+                class="fab fa-bootstrap text-purple-600 text-4xl absolute bottom-20 right-1/3 animate-float-icon-4 opacity-20"></i>
+            <i
+                class="fab fa-git-alt text-red-500 text-4xl absolute top-1/2 left-20 animate-float-icon-5 opacity-20"></i>
+            <i
+                class="fab fa-github text-gray-800 text-4xl absolute top-1/3 right-20 animate-float-icon-6 opacity-20"></i>
+            <i
+                class="fas fa-database text-indigo-600 text-4xl absolute top-32 left-1/2 animate-float-icon-1 opacity-20"></i>
+            <i
+                class="fab fa-node-js text-green-600 text-4xl absolute bottom-32 right-1/2 animate-float-icon-2 opacity-20"></i>
+            <i class="fas fa-code text-cyan-600 text-4xl absolute top-1/4 left-16 animate-float-icon-3 opacity-20"></i>
+            <i
+                class="fas fa-server text-gray-600 text-4xl absolute bottom-1/4 right-16 animate-float-icon-4 opacity-20"></i>
+            <i
+                class="fab fa-python text-blue-600 text-4xl absolute top-1/2 right-1/4 animate-float-icon-5 opacity-20"></i>
+            <i
+                class="fas fa-laptop-code text-purple-500 text-4xl absolute bottom-1/3 left-1/4 animate-float-icon-6 opacity-20"></i>
+            <i
+                class="fas fa-cogs text-gray-700 text-4xl absolute top-2/3 right-1/3 animate-float-icon-1 opacity-20"></i>
+            <i
+                class="fas fa-terminal text-green-500 text-4xl absolute bottom-1/2 left-1/2 animate-float-icon-2 opacity-20"></i>
+            <i
+                class="fab fa-docker text-blue-400 text-4xl absolute top-1/3 left-1/3 animate-float-icon-3 opacity-20"></i>
+        </div>
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <h2
+                class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent animate-fade-in">
+                About Me</h2>
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div class="space-y-8 md:order-1 order-1">
+                    <div class="flex justify-center animate-slide-in-left mt-4 relative">
+                        <!-- Floating Mini Cards Around Image -->
+                        <div class="absolute left-0 top-1/4 bg-white/90 backdrop-blur-sm p-2 z-10 rounded-lg shadow-lg border border-yellow-200 animate-float-icon-1 flex items-center gap-2"
+                            style="transform: translateX(-5px);">
+                            <i class="fas fa-lightbulb text-yellow-500 text-xl"></i>
+                            <span class="text-xs font-semibold text-gray-700">Ideas</span>
+                        </div>
+                        <div class="absolute right-0 top-1/3 bg-white/90 backdrop-blur-sm p-2 z-10 rounded-lg shadow-lg border border-red-200 animate-float-icon-2 flex items-center gap-2"
+                            style="transform: translateX(5px);">
+                            <i class="fas fa-rocket text-red-500 text-xl"></i>
+                            <span class="text-xs font-semibold text-gray-700">Growth</span>
+                        </div>
+                        <div class="absolute bottom-0 left-1/4 bg-white/90 backdrop-blur-sm p-2 z-10 rounded-lg shadow-lg border border-purple-200 animate-float-icon-3 flex items-center gap-2"
+                            style="transform: translateY(35px);">
+                            <i class="fas fa-star text-purple-500 text-xl"></i>
+                            <span class="text-xs font-semibold text-gray-700">Excellence</span>
+                        </div>
+
+                        <div class="relative rounded-full about-image-tilt shadow-2xl"
+                            style="width: 300px; height: 300px;">
+                            <img src="/image2.png" alt="About Photo"
+                                class="w-full h-full object-cover object-center rounded-full">
+                        </div>
+                    </div>
+                    <!-- Stats Cards -->
+                    <div class="grid grid-cols-2 gap-3 px-4 hidden md:grid">
+                        <div
+                            class="group relative bg-white/80 backdrop-blur-sm p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-400 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                            <div
+                                class="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-indigo-400/20 to-purple-400/20 rounded-bl-full">
+                            </div>
+                            <div
+                                class="relative flex items-center justify-center w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg mb-2 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-md">
+                                <i class="fas fa-code text-white text-lg"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-extrabold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-0.5">
+                                <span class="counter" data-target="15">0</span>+
+                            </h3>
+                            <p class="text-xs text-gray-700 font-semibold">Technologies</p>
+                        </div>
+                        <div
+                            class="group relative bg-white/80 backdrop-blur-sm p-3 rounded-xl border-2 border-purple-200 hover:border-purple-400 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                            <div
+                                class="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-bl-full">
+                            </div>
+                            <div
+                                class="relative flex items-center justify-center w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg mb-2 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-md">
+                                <i class="fas fa-briefcase text-white text-lg"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-0.5">
+                                <span class="counter" data-target="8">0</span>+
+                            </h3>
+                            <p class="text-xs text-gray-700 font-semibold">Months Experience</p>
+                        </div>
+                        <div
+                            class="group relative bg-white/80 backdrop-blur-sm p-3 rounded-xl border-2 border-pink-200 hover:border-pink-400 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                            <div
+                                class="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-pink-400/20 to-red-400/20 rounded-bl-full">
+                            </div>
+                            <div
+                                class="relative flex items-center justify-center w-10 h-10 bg-gradient-to-br from-pink-600 to-red-600 rounded-lg mb-2 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-md">
+                                <i class="fas fa-project-diagram text-white text-lg"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-extrabold bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent mb-0.5">
+                                <span class="counter" data-target="5">0</span>+
+                            </h3>
+                            <p class="text-xs text-gray-700 font-semibold">Projects</p>
+                        </div>
+                        <div
+                            class="group relative bg-white/80 backdrop-blur-sm p-3 rounded-xl border-2 border-cyan-200 hover:border-cyan-400 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                            <div
+                                class="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-cyan-400/20 to-blue-400/20 rounded-bl-full">
+                            </div>
+                            <div
+                                class="relative flex items-center justify-center w-10 h-10 bg-gradient-to-br from-cyan-600 to-blue-600 rounded-lg mb-2 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-md">
+                                <i class="fas fa-certificate text-white text-lg"></i>
+                            </div>
+                            <h3
+                                class="text-2xl font-extrabold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent mb-0.5">
+                                <span class="counter" data-target="5">0</span>+
+                            </h3>
+                            <p class="text-xs text-gray-700 font-semibold">Certificates</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6 animate-slide-in-right md:order-2 order-2">
+                    <p
+                        class="text-gray-800 text-lg leading-relaxed text-justify transform hover:translate-x-2 transition duration-300 about-para-1">
+                        <span
+                            class="text-6xl font-bold bg-gradient-to-br from-indigo-600 to-purple-600 bg-clip-text text-transparent float-left mr-3 leading-none animate-bounce-slow">I</span>
+                        am a dedicated Full Stack Developer currently pursuing a Diploma in Computer Science. My
+                        educational background, including schooling through the CBSE Board, has built a strong
+                        foundation for my career.
+                    </p>
+                    <p
+                        class="text-gray-700 text-lg leading-relaxed text-justify border-l-4 border-indigo-600 pl-4 hover:border-l-8 hover:pl-6 transition-all duration-300 hover:bg-white/50 hover:shadow-lg rounded-r-lg py-2 about-para-2">
+                        I specialize in <span
+                            class="font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer">ASP.Net
+                            Core MVC</span>, <span
+                            class="font-semibold text-purple-600 hover:text-purple-800 transition-colors cursor-pointer">Entity
+                            Framework</span>, and <span
+                            class="font-semibold text-pink-600 hover:text-pink-800 transition-colors cursor-pointer">ADO.Net</span>
+                        for backend development. My frontend expertise includes HTML, CSS, JavaScript, Bootstrap, and
+                        Tailwind. I also manage MySQL databases and use Visual Studio Code and Xampp.
+                    </p>
+                    <p
+                        class="text-gray-700 text-lg leading-relaxed text-justify transform hover:translate-x-2 transition duration-300 hover:text-gray-900 about-para-3">
+                        I have successfully completed a six-month apprenticeship and summer training at <span
+                            class="font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-pink-600 transition-all cursor-pointer">DigiCoders
+                            Technologies</span>. During this time, I applied my technical skills to build practical
+                        full-stack applications, ensuring that I can deliver professional results in a real-world
+                        development environment.
+                    </p>
+                    <p
+                        class="text-gray-700 text-lg leading-relaxed text-justify border-l-4 border-purple-600 pl-4 hover:border-l-8 hover:pl-6 transition-all duration-300 hover:bg-white/50 hover:shadow-lg rounded-r-lg py-2 about-para-4">
+                        I am committed to growth, having earned certificates in coding competitions and quizzes. I focus
+                        on delivering clean UI/UX and stay updated on modern frameworks. I am ready to contribute my
+                        technical skills to impactful projects.
+                    </p>
+                </div>
+                <!-- Stats Cards Mobile -->
+                <div class="grid grid-cols-2 gap-3 px-4 md:hidden block md:order-3 order-3">
+                    <div
+                        class="group relative bg-white/80 backdrop-blur-sm p-3 rounded-xl border-2 border-indigo-200 hover:border-indigo-400 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-indigo-400/20 to-purple-400/20 rounded-bl-full">
+                        </div>
+                        <div
+                            class="relative flex items-center justify-center w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg mb-2 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-md">
+                            <i class="fas fa-code text-white text-lg"></i>
+                        </div>
+                        <h3
+                            class="text-2xl font-extrabold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-0.5">
+                            <span class="counter" data-target="15">0</span>+
+                        </h3>
+                        <p class="text-xs text-gray-700 font-semibold">Technologies</p>
+                    </div>
+                    <div
+                        class="group relative bg-white/80 backdrop-blur-sm p-3 rounded-xl border-2 border-purple-200 hover:border-purple-400 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-bl-full">
+                        </div>
+                        <div
+                            class="relative flex items-center justify-center w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg mb-2 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-md">
+                            <i class="fas fa-briefcase text-white text-lg"></i>
+                        </div>
+                        <h3
+                            class="text-2xl font-extrabold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-0.5">
+                            <span class="counter" data-target="8">0</span>+
+                        </h3>
+                        <p class="text-xs text-gray-700 font-semibold">Months Experience</p>
+                    </div>
+                    <div
+                        class="group relative bg-white/80 backdrop-blur-sm p-3 rounded-xl border-2 border-pink-200 hover:border-pink-400 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-pink-400/20 to-red-400/20 rounded-bl-full">
+                        </div>
+                        <div
+                            class="relative flex items-center justify-center w-10 h-10 bg-gradient-to-br from-pink-600 to-red-600 rounded-lg mb-2 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-md">
+                            <i class="fas fa-project-diagram text-white text-lg"></i>
+                        </div>
+                        <h3
+                            class="text-2xl font-extrabold bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent mb-0.5">
+                            <span class="counter" data-target="5">0</span>+
+                        </h3>
+                        <p class="text-xs text-gray-700 font-semibold">Projects</p>
+                    </div>
+                    <div
+                        class="group relative bg-white/80 backdrop-blur-sm p-3 rounded-xl border-2 border-cyan-200 hover:border-cyan-400 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-cyan-400/20 to-blue-400/20 rounded-bl-full">
+                        </div>
+                        <div
+                            class="relative flex items-center justify-center w-10 h-10 bg-gradient-to-br from-cyan-600 to-blue-600 rounded-lg mb-2 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-md">
+                            <i class="fas fa-certificate text-white text-lg"></i>
+                        </div>
+                        <h3
+                            class="text-2xl font-extrabold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent mb-0.5">
+                            <span class="counter" data-target="5">0</span>+
+                        </h3>
+                        <p class="text-xs text-gray-700 font-semibold">Certificates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Education & Skills Section -->
+    <section id="education"
+        class="py-20 px-6 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 relative overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-indigo-400 rounded-full blur-3xl animate-float"></div>
+            <div
+                class="absolute bottom-20 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl animate-float-delayed">
+            </div>
+            <div class="absolute top-1/2 left-1/3 w-64 h-64 bg-pink-400 rounded-full blur-3xl animate-float"></div>
+        </div>
+        <!-- Floating Skill Icons -->
+        <div class="absolute inset-0 pointer-events-none">
+            <i
+                class="fas fa-graduation-cap text-indigo-500 text-4xl absolute top-20 left-1/4 animate-float-icon-1 opacity-20"></i>
+            <i
+                class="fas fa-book text-purple-500 text-4xl absolute top-40 right-1/4 animate-float-icon-2 opacity-20"></i>
+            <i
+                class="fas fa-laptop-code text-pink-500 text-4xl absolute bottom-40 left-1/3 animate-float-icon-3 opacity-20"></i>
+            <i
+                class="fas fa-certificate text-cyan-500 text-4xl absolute bottom-20 right-1/3 animate-float-icon-4 opacity-20"></i>
+            <i
+                class="fas fa-code-branch text-indigo-600 text-4xl absolute top-1/2 left-20 animate-float-icon-5 opacity-20"></i>
+            <i
+                class="fas fa-trophy text-yellow-500 text-4xl absolute top-1/3 right-20 animate-float-icon-6 opacity-20"></i>
+        </div>
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <h2
+                class="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                Education & Skills</h2>
+            <p class="text-center text-gray-600 mb-16 px-6">My academic journey and technical expertise</p>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Education Timeline -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-8 text-gray-800 flex items-center gap-2"><i
+                            class="fas fa-graduation-cap text-indigo-600"></i> Education</h3>
+                    <div class="relative border-l-2 border-indigo-600 pl-8 space-y-8">
+                        <div class="relative group">
+                            <div
+                                class="absolute -left-10 w-4 h-4 bg-indigo-600 rounded-full group-hover:scale-125 transition-transform">
+                            </div>
+                            <p class="text-sm text-indigo-600 font-semibold mb-2">2023 - Present</p>
+                            <div
+                                class="bg-white/80 backdrop-blur-sm p-4 px-5 rounded-xl border-2 border-indigo-100 hover:border-indigo-300 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Polytechnic Diploma in CS</h4>
+                                <div
+                                    class="flex items-center gap-2 mb-2 bg-gradient-to-r from-indigo-50 to-purple-50 p-2 rounded-lg shadow-sm">
+                                    <img src="/government college.jpg" alt="University Logo"
+                                        class="h-10 w-10 rounded-full border-2 border-indigo-200">
+                                    <div>
+                                        <p class="text-gray-800 font-bold text-sm">Government Polytechnic Rampur</p>
+                                        <p class="text-gray-500 text-xs flex items-center gap-1"><i
+                                                class="fas fa-map-marker-alt text-indigo-600"></i> Rampur, Uttar Pradesh
+                                            244901</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3 text-justify">Investing in my
+                                    future with a diploma! 🎓 Focused on mastering practical skills and gaining the
+                                    hands-on experience needed to thrive. Ready to turn knowledge into a professional
+                                    career. ✨</p>
+                                <div class="grid grid-cols-4 md:grid-cols-6 mt-3 education-gallery"
+                                    data-title="Polytechnic Diploma in Computer Science"
+                                    data-company="Government Polytechnic Rampur"
+                                    data-location="Rampur, Uttar Pradesh 244901"
+                                    data-desc="Investing in my future with a diploma! ðŸŽ“ Focused on mastering practical skills and gaining the hands-on experience needed to thrive. Ready to turn knowledge into a professional career. âœ¨"
+                                    data-logo="/government college.jpg">
+                                    <img src="/gp rampur2.jpeg" alt=""
+                                        class="education-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                        style="width: 60px; height: 60px;">
+                                    <img src="/gp rampur3.jpeg" alt=""
+                                        class="education-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                        style="width: 60px; height: 60px;">
+                                    <img src="gp rampur1.jpg" alt=""
+                                        class="education-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                        style="width: 60px; height: 60px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <div
+                                class="absolute -left-10 w-4 h-4 bg-indigo-600 rounded-full group-hover:scale-125 transition-transform">
+                            </div>
+                            <p class="text-sm text-indigo-600 font-semibold mb-2">2022 - 2023</p>
+                            <div
+                                class="bg-white/80 backdrop-blur-sm p-4 px-5 rounded-xl border-2 border-indigo-100 hover:border-indigo-300 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Intermediate (12<sup>th</sup>)</h4>
+                                <div
+                                    class="flex items-center gap-2 mb-2 bg-gradient-to-r from-indigo-50 to-purple-50 p-2 rounded-lg shadow-sm">
+                                    <img src="/panchsheeel school.jpg" alt="School Logo"
+                                        class="h-10 w-10 rounded-full border-2 border-indigo-200">
+                                    <div>
+                                        <p class="text-gray-800 font-bold text-sm">Panchsheel Balak Inter College</p>
+                                        <p class="text-gray-500 text-xs flex items-center gap-1"><i
+                                                class="fas fa-map-marker-alt text-indigo-600"></i> Noida Sector-91,
+                                            Gautam Buddha Nagar, Uttar Pradesh 201301.</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3 text-justify">Thelfth grade
+                                    officially cleared with PCM! 🧪 From complex equations to the laws of physics, it’s
+                                    been a journey of logic and grit. Now, I'm ready to engineer my future. 🚀⚡️</p>
+                                <div class="grid grid-cols-4 md:grid-cols-6 mt-3 education-gallery"
+                                    data-title="Intermediate (12th)" data-company="Panchsheel Balak Inter College"
+                                    data-location="Noida Sector-91, Gautam Buddha Nagar, Uttar Pradesh 201301"
+                                    data-desc="Thelfth grade officially cleared with PCM! ðŸ§ª From complex equations to the laws of physics, it's been a journey of logic and grit. Now, I'm ready to engineer my future. ðŸš€âš¡ï¸"
+                                    data-logo="/panchsheeel school.jpg">
+                                    <img src="/pbic.jpeg" alt=""
+                                        class="education-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                        style="width: 60px; height: 60px;">
+                                    <img src="/pbic2.jpg" alt=""
+                                        class="education-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                        style="width: 60px; height: 60px;">
+                                    <img src="/pbic3.jpg" alt=""
+                                        class="education-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                        style="width: 60px; height: 60px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative group">
+                            <div
+                                class="absolute -left-10 w-4 h-4 bg-indigo-600 rounded-full group-hover:scale-125 transition-transform">
+                            </div>
+                            <p class="text-sm text-indigo-600 font-semibold mb-2">2020 - 2021</p>
+                            <div
+                                class="bg-white/80 backdrop-blur-sm p-4 px-5 rounded-xl border-2 border-indigo-100 hover:border-indigo-300 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                                <h4 class="text-xl font-bold text-gray-900 mb-2">Hight School (10<sup>th</sup>)</h4>
+                                <div
+                                    class="flex items-center gap-2 mb-2 bg-gradient-to-r from-indigo-50 to-purple-50 p-2 rounded-lg shadow-sm">
+                                    <img src="/panchsheeel school.jpg" alt="School Logo"
+                                        class="h-10 w-10 rounded-full border-2 border-indigo-200">
+                                    <div>
+                                        <p class="text-gray-800 font-bold text-sm">Panchsheel Balak Inter College</p>
+                                        <p class="text-gray-500 text-xs flex items-center gap-1"><i
+                                                class="fas fa-map-marker-alt text-indigo-600"></i> Noida Sector-91,
+                                            Gautam Buddha Nagar, Uttar Pradesh 201301.</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-3 text-justify">Huge milestone
+                                    reached! 🎓 I’ve officially completed my 10th grade. It’s been a journey of hard
+                                    work, late nights, and great memories. 📚✨ Ready and excited for the next chapter!
+                                    🚀🌈</p>
+                                <div class="grid grid-cols-4 md:grid-cols-6 mt-3 education-gallery"
+                                    data-title="Hight School (10th)" data-company="Panchsheel Balak Inter College"
+                                    data-location="Noida Sector-91, Gautam Buddha Nagar, Uttar Pradesh 201301"
+                                    data-desc="Huge milestone reached! ðŸŽ“ I've officially completed my 10th grade. It's been a journey of hard work, late nights, and great memories. ðŸ“šâœ¨ Ready and excited for the next chapter! ðŸš€ðŸŒˆ"
+                                    data-logo="/panchsheeel school.jpg">
+                                    <img src="/pbic4.jpeg" alt=""
+                                        class="education-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                        style="width: 60px; height: 60px;">
+                                    <img src="/pbic5.jpg" alt=""
+                                        class="education-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                        style="width: 60px; height: 60px;">
+                                    <img src="/pbic6.jpg" alt=""
+                                        class="education-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                        style="width: 60px; height: 60px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-8 text-gray-800 flex items-center gap-2"><i
+                            class="fas fa-code text-purple-600"></i> Technical Skills</h3>
+                    <div
+                        class="bg-white/80 backdrop-blur-sm p-6 rounded-xl border-2 border-purple-100 shadow-xl hover:shadow-2xl transition-all duration-500">
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-code text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">C</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-code text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">C#</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-plug text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">REST API</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-paper-plane text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">Postman</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-server text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">ASP.NET Core</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-database text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">Entity Framework</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-database text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">MSSQL</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-database text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">MySQL</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-magic text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">AOS</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-film text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">Animate.css</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-bolt text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">GSAP</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fab fa-js text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">jQuery</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-brackets-curly text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">JSON</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-exchange-alt text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">AJAX</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fab fa-bootstrap text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">Bootstrap</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fas fa-wind text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">Tailwind CSS</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fab fa-html5 text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">HTML5</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fab fa-css3-alt text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">CSS3</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fab fa-css3 text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">CSS</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fab fa-js text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">JavaScript</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fab fa-git-alt text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">Git</span>
+                            </div>
+                            <div
+                                class="skill-card bg-white text-indigo-700 px-3 py-3 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white hover:scale-110 hover:shadow-2xl hover:-rotate-2 transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 border border-indigo-200 group">
+                                <i
+                                    class="fab fa-github text-base flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></i>
+                                <span class="font-semibold text-xs truncate">GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-6 mt-8 text-gray-800 flex items-center gap-2"><i
+                            class="fas fa-star text-yellow-500"></i> Strengths</h3>
+                    <div
+                        class="bg-white/80 backdrop-blur-sm p-6 rounded-xl border-2 border-yellow-100 shadow-xl hover:shadow-2xl transition-all duration-500">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div
+                                class="group bg-white p-4 rounded-xl border-2 border-purple-200 hover:border-purple-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="bg-gradient-to-br from-purple-500 to-pink-500 p-3 rounded-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                                        <i class="fas fa-lightbulb text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-gray-800 text-base group-hover:text-purple-600 transition-colors">
+                                            Problem Solving</h4>
+                                        <p class="text-xs text-gray-500">Analytical thinking</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="group bg-white p-4 rounded-xl border-2 border-purple-200 hover:border-purple-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="bg-gradient-to-br from-indigo-500 to-blue-500 p-3 rounded-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                                        <i class="fas fa-users text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-gray-800 text-base group-hover:text-indigo-600 transition-colors">
+                                            Team Leadership</h4>
+                                        <p class="text-xs text-gray-500">Collaborative mindset</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="group bg-white p-4 rounded-xl border-2 border-purple-200 hover:border-purple-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="bg-gradient-to-br from-green-500 to-teal-500 p-3 rounded-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                                        <i class="fas fa-comments text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-gray-800 text-base group-hover:text-green-600 transition-colors">
+                                            Communication</h4>
+                                        <p class="text-xs text-gray-500">Clear & effective</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="group bg-white p-4 rounded-xl border-2 border-purple-200 hover:border-purple-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="bg-gradient-to-br from-orange-500 to-red-500 p-3 rounded-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                                        <i class="fas fa-rocket text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-gray-800 text-base group-hover:text-orange-600 transition-colors">
+                                            Agile Development</h4>
+                                        <p class="text-xs text-gray-500">Fast & adaptive</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="group bg-white p-4 rounded-xl border-2 border-purple-200 hover:border-purple-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="bg-gradient-to-br from-blue-500 to-cyan-500 p-3 rounded-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                                        <i class="fas fa-layer-group text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-gray-800 text-base group-hover:text-blue-600 transition-colors">
+                                            Full Stack Development</h4>
+                                        <p class="text-xs text-gray-500">End-to-end solutions</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="group bg-white p-4 rounded-xl border-2 border-purple-200 hover:border-purple-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="bg-gradient-to-br from-pink-500 to-rose-500 p-3 rounded-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                                        <i class="fas fa-database text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-gray-800 text-base group-hover:text-pink-600 transition-colors">
+                                            Database Management</h4>
+                                        <p class="text-xs text-gray-500">SQL & optimization</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="group bg-white p-4 rounded-xl border-2 border-purple-200 hover:border-purple-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="bg-gradient-to-br from-yellow-500 to-amber-500 p-3 rounded-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                                        <i class="fas fa-plug text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-gray-800 text-base group-hover:text-yellow-600 transition-colors">
+                                            API Development</h4>
+                                        <p class="text-xs text-gray-500">RESTful services</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="group bg-white p-4 rounded-xl border-2 border-purple-200 hover:border-purple-500 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="bg-gradient-to-br from-red-500 to-pink-500 p-3 rounded-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                                        <i class="fas fa-clock text-white text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-gray-800 text-base group-hover:text-red-600 transition-colors">
+                                            Time Management</h4>
+                                        <p class="text-xs text-gray-500">Efficient & organized</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 via-indigo-50 to-purple-50 overflow-hidden relative">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-indigo-400 rounded-full blur-3xl animate-float"></div>
+            <div
+                class="absolute bottom-20 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl animate-float-delayed">
+            </div>
+            <div class="absolute top-1/2 left-1/3 w-64 h-64 bg-pink-400 rounded-full blur-3xl animate-float"></div>
+        </div>
+        <div class="container mx-auto max-w-7xl px-6 relative z-10">
+            <h2
+                class="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                Technologies & Tools</h2>
+            <p class="text-center text-gray-600 mb-16 px-6">Explore the powerful technologies I work with</p>
+
+            <!-- First Carousel - Left to Right -->
+            <div class="owl-carousel owl-theme carousel-ltr mb-8">
+                <div class="item">
+                    <div class="bg-white text-indigo-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-indigo-100"
+                        style="height: 150px; width: 150px;"><img src="/html.webp" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-indigo-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-indigo-100"
+                        style="height: 150px; width: 150px;"><img src="/css3.jpg" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-indigo-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-indigo-100"
+                        style="height: 150px; width: 150px;"><img src="/js.jpg" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-indigo-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-indigo-100"
+                        style="height: 150px; width: 150px;"><img src="/bootstrap.png" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-indigo-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-indigo-100"
+                        style="height: 150px; width: 150px;"><img src="/tailwind.jpg
+                    " alt="" class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-indigo-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-indigo-100"
+                        style="height: 150px; width: 150px;"><img src="/gsap.png" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-indigo-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-indigo-100"
+                        style="height: 150px; width: 150px;"><img src="/jquery.png" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-indigo-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-indigo-100"
+                        style="height: 150px; width: 150px;"><img src="/c.jpg" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+            </div>
+
+            <!-- Second Carousel - Right to Left -->
+            <div class="owl-carousel owl-theme carousel-rtl">
+                <div class="item">
+                    <div class="bg-white text-purple-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-purple-100"
+                        style="height: 150px; width: 150px;"><img src="/ajax.png
+                    " alt="" class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-purple-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-purple-100"
+                        style="height: 150px; width: 150px;"><img src="/mssql.webp" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-purple-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-purple-100"
+                        style="height: 150px; width: 150px;"><img src="/mysql.jpg" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-purple-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-purple-100"
+                        style="height: 150px; width: 150px;"><img src="/git.png" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-purple-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-purple-100"
+                        style="height: 150px; width: 150px;"><img src="/github.jpg" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-purple-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-purple-100"
+                        style="height: 150px; width: 150px;"><img src="/postman2.png" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-purple-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-purple-100"
+                        style="height: 150px; width: 150px;"><img src="/ui and ux.jpg" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+                <div class="item">
+                    <div class="bg-white text-purple-800 rounded-xl text-center font-semibold flex items-center justify-center shadow-xl border-2 border-purple-100"
+                        style="height: 150px; width: 150px;"><img src="/json.jpg" alt=""
+                            class="w-full h-full object-contain p-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience"
+        class="py-20 px-6 bg-gradient-to-br from-gray-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-indigo-400 rounded-full blur-3xl animate-float"></div>
+            <div
+                class="absolute bottom-20 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl animate-float-delayed">
+            </div>
+            <div class="absolute top-1/2 left-1/3 w-64 h-64 bg-pink-400 rounded-full blur-3xl animate-float"></div>
+        </div>
+        <!-- Floating Icons -->
+        <div class="absolute inset-0 pointer-events-none">
+            <!-- Existing 6 Icons -->
+            <i
+                class="fas fa-briefcase text-indigo-500 text-4xl absolute top-20 left-1/4 animate-float-icon-1 opacity-20"></i>
+            <i
+                class="fas fa-building text-purple-500 text-4xl absolute top-40 right-1/4 animate-float-icon-2 opacity-20"></i>
+            <i
+                class="fas fa-users text-pink-500 text-4xl absolute bottom-40 left-1/3 animate-float-icon-3 opacity-20"></i>
+            <i
+                class="fas fa-chart-line text-indigo-600 text-4xl absolute bottom-20 right-1/3 animate-float-icon-4 opacity-20"></i>
+            <i
+                class="fas fa-laptop-code text-purple-600 text-4xl absolute top-1/2 left-20 animate-float-icon-5 opacity-20"></i>
+            <i
+                class="fas fa-award text-pink-600 text-4xl absolute top-1/3 right-20 animate-float-icon-6 opacity-20"></i>
+
+            <!-- Added 9 More Icons for Experience Section -->
+            <i
+                class="fab fa-react text-blue-400 text-3xl absolute top-10 right-1/2 animate-float-icon-1 opacity-10"></i>
+            <i
+                class="fab fa-node-js text-green-500 text-3xl absolute bottom-1/4 left-10 animate-float-icon-3 opacity-10"></i>
+            <i
+                class="fab fa-python text-yellow-500 text-3xl absolute top-1/4 right-10 animate-float-icon-2 opacity-10"></i>
+            <i
+                class="fas fa-database text-gray-500 text-3xl absolute bottom-10 left-1/2 animate-float-icon-4 opacity-10"></i>
+            <i
+                class="fab fa-git-alt text-red-500 text-3xl absolute top-3/4 right-3/4 animate-float-icon-5 opacity-10"></i>
+            <i class="fas fa-cloud text-blue-300 text-3xl absolute top-5 left-5 animate-float-icon-6 opacity-10"></i>
+            <i
+                class="fas fa-code text-indigo-400 text-3xl absolute bottom-5 right-5 animate-float-icon-1 opacity-10"></i>
+            <i
+                class="fas fa-server text-purple-400 text-3xl absolute top-2/3 left-2/3 animate-float-icon-2 opacity-10"></i>
+            <i
+                class="fab fa-js text-yellow-400 text-3xl absolute bottom-1/3 right-1/4 animate-float-icon-3 opacity-10"></i>
+        </div>
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <h2
+                class="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                Experience</h2>
+            <p class="text-center text-gray-600 mb-16 px-6">My professional journey and achievements</p>
+            <div class="relative border-l-2 border-indigo-600 pl-8 space-y-8 max-w-3xl mx-auto">
+                <div class="relative group">
+                    <div
+                        class="absolute -left-10 w-4 h-4 bg-indigo-600 rounded-full group-hover:scale-125 transition-transform">
+                    </div>
+                    <p class="text-sm text-indigo-600 font-semibold mb-2">2026/02 - Present</p>
+                    <div
+                        class="bg-white/80 backdrop-blur-sm p-4 px-5 rounded-xl border-2 border-indigo-100 hover:border-indigo-300 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Junior Associative Developer (Intership)</h4>
+                        <div
+                            class="flex items-center gap-2 mb-2 bg-gradient-to-r from-indigo-50 to-purple-50 p-2 rounded-lg shadow-sm">
+                            <img src="/digicoders_logo.jpg" alt=""
+                                class="h-10 w-10 rounded-full border-2 border-indigo-200">
+                            <div>
+                                <p class="text-gray-800 font-bold text-sm">Digicoder Technology Pvt. Ltd.</p>
+                                <p class="text-gray-500 text-xs flex items-center gap-1"><i
+                                        class="fas fa-map-marker-alt text-indigo-600"></i> Lucknow, Uttar Pradesh 226024
+                                </p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-3 text-justify">Thrilled to join the team as
+                            a Junior Associate Developer Intern! 🚀 I’m eager to contribute to innovative projects,
+                            sharpen my coding skills, and learn from the best. Let’s build! 💻✨</p>
+                        <div class="grid grid-cols-3 md:grid-cols-6 mt-3 experience-gallery"
+                            data-title="Junior Associative Developer (Intership)"
+                            data-company="Digicoder Technology Pvt. Ltd." data-location="Lucknow, Uttar Pradesh 226024"
+                            data-desc="Thrilled to join the team as a Junior Associate Developer Intern! 🚀 I'm eager to contribute to innovative projects, sharpen my coding skills, and learn from the best. Let's build! 💻✨"
+                            data-logo="/digicoders_logo.jpg">
+                            <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt=""
+                                class="experience-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                style="width: 90px; height: 90px;">
+                            <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt=""
+                                class="experience-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                style="width: 90px; height: 90px;">
+                            <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt=""
+                                class="experience-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                style="width: 90px; height: 90px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div
+                        class="absolute -left-10 w-4 h-4 bg-indigo-600 rounded-full group-hover:scale-125 transition-transform">
+                    </div>
+                    <p class="text-sm text-indigo-600 font-semibold mb-2">2025/07 - 2025/12</p>
+                    <div
+                        class="bg-white/80 backdrop-blur-sm p-4 px-5 rounded-xl border-2 border-indigo-100 hover:border-indigo-300 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Apprenticeship Training</h4>
+                        <div
+                            class="flex items-center gap-2 mb-2 bg-gradient-to-r from-indigo-50 to-purple-50 p-2 rounded-lg shadow-sm">
+                            <img src="/digicoders_logo.jpg" alt=""
+                                class="h-10 w-10 rounded-full border-2 border-indigo-200">
+                            <div>
+                                <p class="text-gray-800 font-bold text-sm">Digicoder Technology Pvt. Ltd.</p>
+                                <p class="text-gray-500 text-xs flex items-center gap-1"><i
+                                        class="fas fa-map-marker-alt text-indigo-600"></i> Lucknow, Uttar Pradesh 226024
+                                </p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-3 text-justify">I've hit a major milestone!
+                            🎓 I’m proud to have completed my 6-month apprenticeship at Digicoder P. Ltd. This journey
+                            sharpened my technical skills and provided invaluable hands-on experience. Huge thanks to my
+                            mentors for the incredible guidance! 🚀💻✨</p>
+                        <div class="grid grid-cols-3 md:grid-cols-6 mt-3 experience-gallery"
+                            data-title="Apprenticeship Training" data-company="Digicoder Technology Pvt. Ltd."
+                            data-location="Lucknow, Uttar Pradesh 226024"
+                            data-desc="I've hit a major milestone! 🎓 I'm proud to have completed my 6-month apprenticeship at Digicoder P. Ltd. This journey sharpened my technical skills and provided invaluable hands-on experience. Huge thanks to my mentors for the incredible guidance! 🚀💻✨"
+                            data-logo="/digicoders_logo.jpg">
+                            <img src="/appreticeship cerificate.jpeg" alt=""
+                                class="experience-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                style="width: 90px; height: 90px;">
+                            <img src="/experience letter.jpeg" alt=""
+                                class="experience-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                style="width: 90px; height: 90px;">
+                            <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt=""
+                                class="experience-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                style="width: 90px; height: 90px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div
+                        class="absolute -left-10 w-4 h-4 bg-indigo-600 rounded-full group-hover:scale-125 transition-transform">
+                    </div>
+                    <p class="text-sm text-indigo-600 font-semibold mb-2">2025/06 - 2025/07</p>
+                    <div
+                        class="bg-white/80 backdrop-blur-sm p-4 px-5 rounded-xl border-2 border-indigo-100 hover:border-indigo-300 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Summer Training</h4>
+                        <div
+                            class="flex items-center gap-2 mb-2 bg-gradient-to-r from-indigo-50 to-purple-50 p-2 rounded-lg shadow-sm">
+                            <img src="/digicoders_logo.jpg" alt=""
+                                class="h-10 w-10 rounded-full border-2 border-indigo-200">
+                            <div>
+                                <p class="text-gray-800 font-bold text-sm">Digicoder Technology Pvt. Ltd.</p>
+                                <p class="text-gray-500 text-xs flex items-center gap-1"><i
+                                        class="fas fa-map-marker-alt text-indigo-600"></i> Lucknow, Uttar Pradesh 226024
+                                </p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-3 text-justify">Exciting milestone! 🎓 I’ve
+                            successfully completed my 45-day summer training at Digicoder P. Ltd. This experience was
+                            packed with learning, hands-on projects, and invaluable mentorship. Ready to apply these new
+                            skills to my next big coding challenge! 🚀💻✨🔥.</p>
+                        <div class="grid grid-cols-3 md:grid-cols-6 mt-3 experience-gallery"
+                            data-title="Summer Training" data-company="Digicoder Technology Pvt. Ltd."
+                            data-location="Lucknow, Uttar Pradesh 226024"
+                            data-desc="Exciting milestone! 🎓 I've successfully completed my 45-day summer training at Digicoder P. Ltd. This experience was packed with learning, hands-on projects, and invaluable mentorship. Ready to apply these new skills to my next big coding challenge! 🚀💻✨🔥"
+                            data-logo="/digicoders_logo.jpg">
+                            <img src="/summer training certificate.jpeg" alt=""
+                                class="experience-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                style="width: 90px; height: 90px;">
+                            <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt=""
+                                class="experience-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                style="width: 90px; height: 90px;">
+                            <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt=""
+                                class="experience-img rounded-lg shadow-sm object-cover cursor-pointer hover:scale-105 transition"
+                                style="width: 90px; height: 90px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects"
+        class="py-20 px-6 bg-gradient-to-br from-gray-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-indigo-400 rounded-full blur-3xl animate-float"></div>
+            <div
+                class="absolute bottom-20 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl animate-float-delayed">
+            </div>
+        </div>
+        <!-- Added Floating Icons -->
+        <div class="absolute inset-0 pointer-events-none">
+            <i
+                class="fas fa-project-diagram text-indigo-400 text-4xl absolute top-10 left-10 animate-float-icon-1 opacity-10"></i>
+            <i
+                class="fas fa-code-branch text-purple-400 text-4xl absolute top-20 right-20 animate-float-icon-2 opacity-10"></i>
+            <i
+                class="fas fa-laptop-code text-pink-400 text-3xl absolute bottom-20 left-20 animate-float-icon-3 opacity-10"></i>
+            <i
+                class="fas fa-layer-group text-blue-400 text-4xl absolute bottom-10 right-10 animate-float-icon-4 opacity-10"></i>
+            <i class="fab fa-github text-gray-400 text-3xl absolute top-1/2 left-5 animate-float-icon-5 opacity-10"></i>
+            <i
+                class="fas fa-terminal text-green-400 text-3xl absolute top-1/3 right-1/3 animate-float-icon-6 opacity-10"></i>
+            <i
+                class="fab fa-html5 text-orange-500 text-3xl absolute bottom-1/3 left-1/4 animate-float-icon-1 opacity-10"></i>
+            <i
+                class="fab fa-css3-alt text-blue-500 text-3xl absolute top-1/4 right-1/4 animate-float-icon-2 opacity-10"></i>
+            <i
+                class="fab fa-js-square text-yellow-400 text-3xl absolute bottom-5 left-1/2 animate-float-icon-3 opacity-10"></i>
+            <i class="fab fa-react text-cyan-400 text-3xl absolute top-5 left-1/2 animate-float-icon-4 opacity-10"></i>
+            <i
+                class="fab fa-vuejs text-green-500 text-3xl absolute top-2/3 right-5 animate-float-icon-5 opacity-10"></i>
+            <i
+                class="fab fa-angular text-red-500 text-3xl absolute bottom-1/4 right-1/2 animate-float-icon-6 opacity-10"></i>
+            <i
+                class="fas fa-database text-indigo-300 text-3xl absolute top-1/3 left-10 animate-float-icon-1 opacity-10"></i>
+            <i
+                class="fas fa-server text-purple-300 text-3xl absolute bottom-1/2 right-10 animate-float-icon-2 opacity-10"></i>
+            <i class="fas fa-bug text-red-300 text-3xl absolute top-3/4 left-1/3 animate-float-icon-3 opacity-10"></i>
+        </div>
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <div class="text-center mb-16">
+                <h2
+                    class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    Featured Projects</h2>
+                <p class="text-gray-600 text-lg">Showcasing my best work and creative solutions</p>
+            </div>
+            <div id="projectsGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+            <div class="text-center mt-12">
+                <button id="viewMoreBtn"
+                    class="group bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl relative overflow-hidden">
+                    <span
+                        class="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                    <span class="relative z-10 flex items-center gap-3">
+                        View More Projects <i class="fas fa-chevron-down group-hover:animate-bounce"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates"
+        class="py-20 px-6 bg-gradient-to-br from-gray-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-indigo-400 rounded-full blur-3xl animate-float"></div>
+            <div
+                class="absolute bottom-20 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl animate-float-delayed">
+            </div>
+        </div>
+        <div class="absolute inset-0 pointer-events-none">
+            <i
+                class="fas fa-certificate text-indigo-500 text-4xl absolute top-20 left-1/4 animate-float-icon-1 opacity-20"></i>
+            <i
+                class="fas fa-award text-purple-500 text-4xl absolute top-40 right-1/4 animate-float-icon-2 opacity-20"></i>
+            <i
+                class="fas fa-medal text-pink-500 text-4xl absolute bottom-40 left-1/3 animate-float-icon-3 opacity-20"></i>
+            <i
+                class="fas fa-trophy text-indigo-600 text-4xl absolute bottom-20 right-1/3 animate-float-icon-4 opacity-20"></i>
+        </div>
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <div class="text-center mb-16">
+                <h2
+                    class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    Certifications & Achievements</h2>
+                <p class="text-gray-600 text-lg">Professional certifications and recognitions</p>
+            </div>
+            <div class="relative border-l-2 border-indigo-600 pl-8 space-y-8 max-w-3xl mx-auto">
+                <div class="relative group">
+                    <div
+                        class="absolute -left-10 w-4 h-4 bg-indigo-600 rounded-full group-hover:scale-125 transition-transform">
+                    </div>
+                    <p class="text-sm text-indigo-600 font-semibold mb-2">2025</p>
+                    <div
+                        class="bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-indigo-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row items-start gap-6">
+                            <img src="appreticeship cerificate.jpeg" alt="Certificate 1"
+                                class="w-40 h-auto rounded-lg shadow-md object-contain mx-auto md:mx-0 cursor-pointer hover:scale-105 transition-transform certificate-img">
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between gap-3 mb-3">
+                                    <h4 class="text-2xl font-bold text-gray-900 flex-1">Apprenticeship Certificate</h4>
+                                    <button
+                                        class="cert-like-btn flex items-center gap-1.5 bg-white hover:bg-red-50 px-3 py-1.5 rounded-full border border-indigo-200 hover:border-red-300 transition-all duration-300 group"
+                                        data-cert-id="cert1">
+                                        <i
+                                            class="far fa-heart text-gray-500 group-hover:text-red-500 transition-colors cert-heart"></i>
+                                        <span
+                                            class="text-xs font-bold text-gray-700 group-hover:text-red-500 transition-colors cert-count">0</span>
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 mb-3 bg-gradient-to-r from-indigo-50 to-purple-50 p-3 rounded-lg shadow-sm">
+                                    <img src="/digicoders_logo.jpg" alt=""
+                                        class="h-12 w-12 rounded-full border-2 border-indigo-200">
+                                    <div>
+                                        <p class="text-gray-800 font-bold">Digicoder Technology Pvt. Ltd.</p>
+                                        <p class="text-gray-500 text-sm flex items-center gap-1"><i
+                                                class="fas fa-map-marker-alt text-indigo-600"></i> Lucknow, Uttar
+                                            Pradesh, India 226024</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed text-justify">
+                                    I've officially completed my 6-month apprenticeship at Digicoder Technology P. Ltd!
+                                    🎓 This journey was a deep dive into real-world development, enhancing my technical
+                                    expertise and problem-solving skills. Grateful to my mentors for their guidance and
+                                    support. 🚀💻
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div
+                        class="absolute -left-10 w-4 h-4 bg-indigo-600 rounded-full group-hover:scale-125 transition-transform">
+                    </div>
+                    <p class="text-sm text-indigo-600 font-semibold mb-2">2025</p>
+                    <div
+                        class="bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-indigo-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row items-start gap-6">
+                            <img src="/summer training certificate.jpeg" alt="Certificate 2"
+                                class="w-40 h-auto rounded-lg shadow-md object-contain mx-auto md:mx-0 cursor-pointer hover:scale-105 transition-transform certificate-img">
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between gap-3 mb-3">
+                                    <h4 class="text-2xl font-bold text-gray-900 flex-1">Summer Training Certificate</h4>
+                                    <button
+                                        class="cert-like-btn flex items-center gap-1.5 bg-white hover:bg-red-50 px-3 py-1.5 rounded-full border border-indigo-200 hover:border-red-300 transition-all duration-300 group"
+                                        data-cert-id="cert2">
+                                        <i
+                                            class="far fa-heart text-gray-500 group-hover:text-red-500 transition-colors cert-heart"></i>
+                                        <span
+                                            class="text-xs font-bold text-gray-700 group-hover:text-red-500 transition-colors cert-count">0</span>
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 mb-3 bg-gradient-to-r from-indigo-50 to-purple-50 p-3 rounded-lg shadow-sm">
+                                    <img src="/digicoders_logo.jpg" alt=""
+                                        class="h-12 w-12 rounded-full border-2 border-indigo-200">
+                                    <div>
+                                        <p class="text-gray-800 font-bold">Digicoder Technology Pvt. Ltd. </p>
+                                        <p class="text-gray-500 text-sm flex items-center gap-1"><i
+                                                class="fas fa-map-marker-alt text-indigo-600"></i> Lucknow, Uttar
+                                            Pradesh, India 226024</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed text-justify">
+                                    I’ve officially wrapped up my 45-day summer training at Digicoder P. Ltd! 🎓 It was
+                                    an incredible journey of growth, focusing on hands-on coding and real-world
+                                    projects. Grateful for the mentorship and ready to level up my dev career! 🚀💻✨🔥
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div
+                        class="absolute -left-10 w-4 h-4 bg-indigo-600 rounded-full group-hover:scale-125 transition-transform">
+                    </div>
+                    <p class="text-sm text-indigo-600 font-semibold mb-2">2024</p>
+                    <div
+                        class="bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-indigo-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row items-start gap-6">
+                            <img src="/digicoder quize certificate.jpeg" alt="Certificate 3"
+                                class="w-40 h-auto rounded-lg shadow-md object-contain mx-auto md:mx-0 cursor-pointer hover:scale-105 transition-transform certificate-img">
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between gap-3 mb-3">
+                                    <h4 class="text-2xl font-bold text-gray-900 flex-1">Certificate of Participation
+                                    </h4>
+                                    <button
+                                        class="cert-like-btn flex items-center gap-1.5 bg-white hover:bg-red-50 px-3 py-1.5 rounded-full border border-indigo-200 hover:border-red-300 transition-all duration-300 group"
+                                        data-cert-id="cert3">
+                                        <i
+                                            class="far fa-heart text-gray-500 group-hover:text-red-500 transition-colors cert-heart"></i>
+                                        <span
+                                            class="text-xs font-bold text-gray-700 group-hover:text-red-500 transition-colors cert-count">0</span>
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 mb-3 bg-gradient-to-r from-indigo-50 to-purple-50 p-3 rounded-lg shadow-sm">
+                                    <img src="/digicoders_logo.jpg" alt=""
+                                        class="h-12 w-12 rounded-full border-2 border-indigo-200">
+                                    <div>
+                                        <p class="text-gray-800 font-bold">Digicoder Technology Pvt. Ltd.</p>
+                                        <p class="text-gray-500 text-sm flex items-center gap-1"><i
+                                                class="fas fa-map-marker-alt text-indigo-600"></i> Lucknow, Uttar
+                                            Pradesh, India 226024</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed text-justify">
+                                    I’m thrilled to have earned a certificate for participating in the Coding Quiz
+                                    Competition by Digicoder P. Ltd! 🏆 It was a fantastic challenge that tested my
+                                    logic and speed. Grateful for the opportunity to sharpen my skills! 💻🧠✨🚀
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div
+                        class="absolute -left-10 w-4 h-4 bg-indigo-600 rounded-full group-hover:scale-125 transition-transform">
+                    </div>
+                    <p class="text-sm text-indigo-600 font-semibold mb-2">2024</p>
+                    <div
+                        class="bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-indigo-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        <div class="flex flex-col md:flex-row items-start gap-6">
+                            <img src="/eucoder certificate.jpeg" alt="Certificate 4"
+                                class="w-40 h-auto rounded-lg shadow-md object-contain mx-auto md:mx-0 cursor-pointer hover:scale-105 transition-transform certificate-img">
+                            <div class="flex-1">
+                                <div class="flex items-start justify-between gap-3 mb-3">
+                                    <h4 class="text-2xl font-bold text-gray-900 flex-1">Certificate of Participation
+                                    </h4>
+                                    <button
+                                        class="cert-like-btn flex items-center gap-1.5 bg-white hover:bg-red-50 px-3 py-1.5 rounded-full border border-indigo-200 hover:border-red-300 transition-all duration-300 group"
+                                        data-cert-id="cert4">
+                                        <i
+                                            class="far fa-heart text-gray-500 group-hover:text-red-500 transition-colors cert-heart"></i>
+                                        <span
+                                            class="text-xs font-bold text-gray-700 group-hover:text-red-500 transition-colors cert-count">0</span>
+                                    </button>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 mb-3 bg-gradient-to-r from-indigo-50 to-purple-50 p-3 rounded-lg shadow-sm">
+                                    <img src="/eucoder.jpg" alt=""
+                                        class="h-12 w-12 rounded-full border-2 border-indigo-200">
+                                    <div>
+                                        <p class="text-gray-800 font-bold">Eucoders Technology Pvt. Ltd.</p>
+                                        <p class="text-gray-500 text-sm flex items-center gap-1"><i
+                                                class="fas fa-map-marker-alt text-indigo-600"></i> Lucknow, Uttar
+                                            Pradesh, India 226024</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 leading-relaxed text-justify">
+                                    I’m thrilled to have earned a certificate for participating in the Coding Quiz
+                                    Competition hosted by Eucoders Pvt. Ltd! 🏆 It was a fantastic experience testing my
+                                    logic and speed against great talent. Grateful for the opportunity to learn! 💻🧠✨🚀
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery"
+        class="py-20 px-6 bg-gradient-to-br from-gray-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-indigo-400 rounded-full blur-3xl animate-float"></div>
+            <div
+                class="absolute bottom-20 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl animate-float-delayed">
+            </div>
+        </div>
+        <div class="absolute inset-0 pointer-events-none">
+            <i
+                class="fas fa-images text-indigo-500 text-4xl absolute top-20 left-1/4 animate-float-icon-1 opacity-20"></i>
+            <i
+                class="fas fa-camera text-purple-500 text-4xl absolute top-40 right-1/4 animate-float-icon-2 opacity-20"></i>
+            <i
+                class="fas fa-photo-video text-pink-500 text-4xl absolute bottom-40 left-1/3 animate-float-icon-3 opacity-20"></i>
+            <i
+                class="fas fa-image text-indigo-600 text-4xl absolute bottom-20 right-1/3 animate-float-icon-4 opacity-20"></i>
+        </div>
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <div class="text-center mb-16">
+                <h2
+                    class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    Gallery</h2>
+                <p class="text-gray-600 text-lg">Moments captured through my journey</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer gallery-img"
+                    style="height: 200px;">
+                    <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt="Gallery 1"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-4">
+                        <p class="text-white font-semibold text-sm">Coding Session</p>
+                        <button
+                            class="gallery-like-btn flex items-center gap-1 bg-white/20 backdrop-blur-sm hover:bg-white/30 px-2 py-1 rounded-full transition-all"
+                            data-gallery-id="gallery1" onclick="event.stopPropagation()">
+                            <i class="far fa-heart text-red-500 gallery-heart text-sm"></i>
+                            <span class="text-xs font-bold text-white gallery-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer gallery-img"
+                    style="height: 200px;">
+                    <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt="Gallery 2"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-4">
+                        <p class="text-white font-semibold text-sm">Workspace</p>
+                        <button
+                            class="gallery-like-btn flex items-center gap-1 bg-white/20 backdrop-blur-sm hover:bg-white/30 px-2 py-1 rounded-full transition-all"
+                            data-gallery-id="gallery2" onclick="event.stopPropagation()">
+                            <i class="far fa-heart text-red-500 gallery-heart text-sm"></i>
+                            <span class="text-xs font-bold text-white gallery-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer gallery-img"
+                    style="height: 200px;">
+                    <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt="Gallery 3"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-4">
+                        <p class="text-white font-semibold text-sm">Team Meeting</p>
+                        <button
+                            class="gallery-like-btn flex items-center gap-1 bg-white/20 backdrop-blur-sm hover:bg-white/30 px-2 py-1 rounded-full transition-all"
+                            data-gallery-id="gallery3" onclick="event.stopPropagation()">
+                            <i class="far fa-heart text-red-500 gallery-heart text-sm"></i>
+                            <span class="text-xs font-bold text-white gallery-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer gallery-img"
+                    style="height: 200px;">
+                    <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt="Gallery 4"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-4">
+                        <p class="text-white font-semibold text-sm">Conference</p>
+                        <button
+                            class="gallery-like-btn flex items-center gap-1 bg-white/20 backdrop-blur-sm hover:bg-white/30 px-2 py-1 rounded-full transition-all"
+                            data-gallery-id="gallery4" onclick="event.stopPropagation()">
+                            <i class="far fa-heart text-red-500 gallery-heart text-sm"></i>
+                            <span class="text-xs font-bold text-white gallery-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-row-1 hidden group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer gallery-img"
+                    style="height: 200px;">
+                    <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt="Gallery 5"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-4">
+                        <p class="text-white font-semibold text-sm">Brainstorming</p>
+                        <button
+                            class="gallery-like-btn flex items-center gap-1 bg-white/20 backdrop-blur-sm hover:bg-white/30 px-2 py-1 rounded-full transition-all"
+                            data-gallery-id="gallery5" onclick="event.stopPropagation()">
+                            <i class="far fa-heart text-red-500 gallery-heart text-sm"></i>
+                            <span class="text-xs font-bold text-white gallery-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-row-1 hidden group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer gallery-img"
+                    style="height: 200px;">
+                    <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt="Gallery 6"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-4">
+                        <p class="text-white font-semibold text-sm">Project Launch</p>
+                        <button
+                            class="gallery-like-btn flex items-center gap-1 bg-white/20 backdrop-blur-sm hover:bg-white/30 px-2 py-1 rounded-full transition-all"
+                            data-gallery-id="gallery6" onclick="event.stopPropagation()">
+                            <i class="far fa-heart text-red-500 gallery-heart text-sm"></i>
+                            <span class="text-xs font-bold text-white gallery-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-row-1 hidden group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer gallery-img"
+                    style="height: 200px;">
+                    <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt="Gallery 7"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-4">
+                        <p class="text-white font-semibold text-sm">Development</p>
+                        <button
+                            class="gallery-like-btn flex items-center gap-1 bg-white/20 backdrop-blur-sm hover:bg-white/30 px-2 py-1 rounded-full transition-all"
+                            data-gallery-id="gallery7" onclick="event.stopPropagation()">
+                            <i class="far fa-heart text-red-500 gallery-heart text-sm"></i>
+                            <span class="text-xs font-bold text-white gallery-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-row-1 hidden group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer gallery-img"
+                    style="height: 200px;">
+                    <img src="/Gemini_Generated_Image_ealmpzealmpzealm.png" alt="Gallery 8"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-4">
+                        <p class="text-white font-semibold text-sm">Achievement</p>
+                        <button
+                            class="gallery-like-btn flex items-center gap-1 bg-white/20 backdrop-blur-sm hover:bg-white/30 px-2 py-1 rounded-full transition-all"
+                            data-gallery-id="gallery8" onclick="event.stopPropagation()">
+                            <i class="far fa-heart text-red-500 gallery-heart text-sm"></i>
+                            <span class="text-xs font-bold text-white gallery-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button id="viewMoreGalleryBtn"
+                    class="group bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-110 hover:shadow-2xl relative overflow-hidden">
+                    <span
+                        class="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                    <span class="relative z-10 flex items-center gap-3">
+                        View More <i class="fas fa-chevron-down group-hover:animate-bounce"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact"
+        class="py-20 px-6 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-indigo-400 rounded-full blur-3xl animate-float"></div>
+            <div
+                class="absolute bottom-20 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl animate-float-delayed">
+            </div>
+        </div>
+        <div class="absolute inset-0 pointer-events-none">
+            <i
+                class="fas fa-envelope text-indigo-500 text-4xl absolute top-20 left-1/4 animate-float-icon-1 opacity-20"></i>
+            <i
+                class="fas fa-phone text-purple-500 text-4xl absolute top-40 right-1/4 animate-float-icon-2 opacity-20"></i>
+            <i
+                class="fas fa-map-marker-alt text-pink-500 text-4xl absolute bottom-40 left-1/3 animate-float-icon-3 opacity-20"></i>
+            <i
+                class="fas fa-paper-plane text-indigo-600 text-4xl absolute bottom-20 right-1/3 animate-float-icon-4 opacity-20"></i>
+        </div>
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <div class="text-center mb-16">
+                <h2
+                    class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    Get In Touch</h2>
+                <p class="text-gray-600 text-lg">Let's discuss your next project</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="w-full max-w-full md:max-w-none">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                        <i class="fas fa-address-book text-indigo-600"></i>
+                        Contact Information
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div
+                            class="group bg-gradient-to-br from-white to-indigo-50 backdrop-blur-sm py-3 px-4 rounded-xl border-2 border-indigo-200 hover:border-indigo-400 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:scale-105">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="bg-gradient-to-br from-indigo-500 to-purple-600 p-3 rounded-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-md">
+                                    <i class="fas fa-envelope text-white text-lg"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-xs text-indigo-600 font-bold uppercase tracking-wide">Email</p>
+                                    <p class="text-gray-900 font-bold text-sm truncate">john.doe@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="group bg-gradient-to-br from-white to-purple-50 backdrop-blur-sm py-3 px-4 rounded-xl border-2 border-purple-200 hover:border-purple-400 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:scale-105">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="bg-gradient-to-br from-purple-500 to-pink-600 p-3 rounded-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-md">
+                                    <i class="fas fa-phone text-white text-lg"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-xs text-purple-600 font-bold uppercase tracking-wide">Phone</p>
+                                    <p class="text-gray-900 font-bold text-sm">+1 (234) 567-8900</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="group bg-gradient-to-br from-white to-pink-50 backdrop-blur-sm py-3 px-4 rounded-xl border-2 border-pink-200 hover:border-pink-400 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:scale-105">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="bg-gradient-to-br from-pink-500 to-orange-600 p-3 rounded-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-md">
+                                    <i class="fas fa-map-marker-alt text-white text-lg"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-xs text-pink-600 font-bold uppercase tracking-wide">Location</p>
+                                    <p class="text-gray-900 font-bold text-sm">San Francisco, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="group bg-gradient-to-br from-white to-cyan-50 backdrop-blur-sm py-3 px-4 rounded-xl border-2 border-cyan-200 hover:border-cyan-400 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:scale-105">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="bg-gradient-to-br from-cyan-500 to-blue-600 p-3 rounded-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-md">
+                                    <i class="fas fa-globe text-white text-lg"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-xs text-cyan-600 font-bold uppercase tracking-wide">Website</p>
+                                    <p class="text-gray-900 font-bold text-sm truncate">www.example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 rounded-xl overflow-hidden border-2 border-gray-200 shadow-lg">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.9638590228856!2d80.94701827424907!3d26.904642076651946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd90f852511b%3A0xea3004cdf494ecbb!2sDigiCoders%20Technologies%20Private%20Limited%2C%20Best%20Software%2FWebsite%2FMobile%20App%20Development%20Company%20in%20Lucknow!5e0!3m2!1sen!2sin!4v1770466526309!5m2!1sen!2sin"
+                            width="100%" class="h-[220px] md:h-[320px]" style="border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div
+                    class="bg-gradient-to-br from-white to-indigo-50/50 backdrop-blur-sm p-8 rounded-2xl border-2 border-indigo-200 shadow-2xl hover:shadow-3xl transition-all duration-300">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                        <i class="fas fa-paper-plane text-indigo-600"></i>
+                        Send Message
+                    </h3>
+                    <form class="space-y-5">
+                        <div class="relative group">
+                            <i
+                                class="fas fa-user absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-indigo-600 transition-colors"></i>
+                            <input type="text" placeholder="Your Name"
+                                class="w-full pl-12 pr-5 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all bg-white hover:border-indigo-300 hover:shadow-md">
+                        </div>
+                        <div class="relative group">
+                            <i
+                                class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-indigo-600 transition-colors"></i>
+                            <input type="email" placeholder="Your Email"
+                                class="w-full pl-12 pr-5 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all bg-white hover:border-indigo-300 hover:shadow-md">
+                        </div>
+                        <div class="relative group">
+                            <i
+                                class="fas fa-phone absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-indigo-600 transition-colors"></i>
+                            <input type="tel" placeholder="Your Mobile Number"
+                                class="w-full pl-12 pr-5 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all bg-white hover:border-indigo-300 hover:shadow-md">
+                        </div>
+                        <div class="relative group">
+                            <i
+                                class="fas fa-comment-dots absolute left-4 top-5 text-gray-400 group-focus-within:text-indigo-600 transition-colors"></i>
+                            <textarea placeholder="Your Message" rows="5"
+                                class="w-full pl-12 pr-5 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all bg-white hover:border-indigo-300 hover:shadow-md resize-none"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="group w-full bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl relative overflow-hidden">
+                            <span
+                                class="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></span>
+                            <span class="relative z-10 flex items-center justify-center gap-2">
+                                Send Message <i
+                                    class="fas fa-paper-plane group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-6">
+        <script>
+            const shareBtn = document.getElementById('shareBtn');
+            const socialLinks = document.getElementById('socialLinks');
+            const shareBtnWaves = shareBtn.querySelectorAll('.radiation-wave');
+            let isShareOpen = false;
+
+            shareBtn.addEventListener('click', function () {
+                isShareOpen = !isShareOpen;
+                const links = socialLinks.querySelectorAll('a');
+
+                if (isShareOpen) {
+                    shareBtnWaves.forEach(wave => wave.style.animation = 'none');
+                    links.forEach((link, index) => {
+                        setTimeout(() => {
+                            link.style.opacity = '1';
+                            link.style.transform = 'translateX(0)';
+                            const angle = (index * 30) + 90;
+                            const radius = 80;
+                            const x = Math.cos(angle * Math.PI / 180) * radius;
+                            const y = Math.sin(angle * Math.PI / 180) * radius;
+                            link.style.right = `${-x - 65}px`;
+                            link.style.top = `${y - 30}px`;
+                        }, index * 100);
+                    });
+                } else {
+                    shareBtnWaves.forEach((wave, index) => {
+                        wave.style.animation = `radiation 2s infinite ${index * 0.5}s`;
+                    });
+                    links.forEach((link) => {
+                        link.style.opacity = '0';
+                        link.style.transform = 'translateX(50px)';
+                        link.style.right = '0';
+                        link.style.top = '0';
+                    });
+                }
+            });
+        </script>
+        <script src="index.js"></script>
+
+
+        <!-- Footer -->
+        <footer class="bg-gradient-to-r from-gray-50 to-gray-100 border-t-2 border-indigo-200 flex items-center"
+            style="height: 60px;">
+            <div class="container mx-auto px-4 text-center">
+                <p class="text-gray-700 text-sm md:text-base font-medium">
+                    &copy; 2024 <span
+                        class="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-bold">Ankul
+                        kumar</span>. All rights reserved.
+                    <span class="inline-block mx-2">|</span>
+                    Made with <i class="fas fa-heart text-red-500 animate-pulse mx-1"></i> in India
+                </p>
+            </div>
+        </footer>
+        <!-- Scroll Progress Bar -->
+        <div id="scroll-progress-container"
+            class="fixed top-0 left-0 w-full h-1 bg-gray-950 z-50 opacity-0 transition-opacity duration-300">
+            <div id="scroll-progress-bar"
+                class="relative h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-0 transition-all duration-100 ease-out shadow-[0_0_10px_rgba(99,102,241,0.5)]">
+                <span id="scroll-percentage"
+                    class="absolute right-0 top-full mt-3 text-xs font-mono font-bold text-white bg-indigo-900/80 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full shadow-[0_0_15px_rgba(79,70,229,0.4)] transform translate-x-1/2 opacity-0 transition-opacity duration-300 pointer-events-none">0%</span>
+            </div>
+        </div>
+</body>
+
+</html>
