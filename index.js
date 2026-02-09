@@ -538,7 +538,7 @@ function renderProjects() {
 
         const cardHtml = `
             <div class="group bg-slate-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-2 border-transparent ${project.hoverBorder} cursor-pointer project-card ${visibilityClass}"
-                 data-id="${index}">
+                 data-id="${index}" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                 <div class="relative h-56 bg-gradient-to-br ${project.gradient} flex items-center justify-center overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent group-hover:from-black/20 transition-all"></div>
                     <img src="${project.image}" class="text-white/90 relative z-10 group-hover:scale-105 transition-all duration-500 h-full w-full object-fill">
