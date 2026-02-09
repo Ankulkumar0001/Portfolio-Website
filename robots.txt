@@ -1,3 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /node_modules/
+Disallow: /*.json$
+Crawl-delay: 1
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
 Sitemap: https://ankulkumar01.netlify.app/sitemap.xml

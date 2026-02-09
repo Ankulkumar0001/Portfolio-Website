@@ -1,0 +1,5 @@
+# Redirect to HTTPS
+https://ankulkumar01.netlify.app/* https://ankulkumar01.netlify.app/:splat 200
+
+# Ensure trailing slashes
+/index /index/ 301

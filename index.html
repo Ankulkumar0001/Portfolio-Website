@@ -4,12 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ankul Kumar - Full Stack Developer Portfolio</title>
     <meta name="description"
         content="Portfolio of Ankul Kumar, a passionate Full Stack Developer specializing in ASP.NET Core, C#, JavaScript, and modern web technologies. View my projects and experience.">
     <meta name="keywords"
         content="Ankul Kumar, Full Stack Developer, .NET Developer, Web Developer, Portfolio, ASP.NET Core, JavaScript, C#, React, Lucknow Developer">
     <meta name="author" content="Ankul Kumar">
+    <meta name="theme-color" content="#1a202c">
+
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -18,6 +26,8 @@
     <meta property="og:description"
         content="Portfolio of Ankul Kumar, a passionate Full Stack Developer specializing in ASP.NET Core, C#, JavaScript, and modern web technologies.">
     <meta property="og:image" content="https://ankulkumar01.netlify.app/image2.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -26,31 +36,76 @@
     <meta property="twitter:description"
         content="Portfolio of Ankul Kumar, a passionate Full Stack Developer specializing in ASP.NET Core, C#, JavaScript, and modern web technologies.">
     <meta property="twitter:image" content="https://ankulkumar01.netlify.app/image2.png">
+    <meta property="twitter:creator" content="@ankulkumar0001">
 
     <link rel="canonical" href="https://ankulkumar01.netlify.app/">
 
     <!-- SEO Meta Tags -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-image-preview:large">
     <meta name="bingbot" content="index, follow">
     <meta name="revisit-after" content="7 days">
     <meta name="language" content="English">
     <meta name="distribution" content="global">
+    <meta name="copyright" content="© 2026 Ankul Kumar. All rights reserved.">
 
-    <!-- Schema.org Structured Data -->
+    <!-- Schema.org Structured Data - Multiple Schemas for Better Indexing -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ankul Kumar",
-      "url": "https://ankulkumar01.netlify.app",
-      "image": "https://ankulkumar01.netlify.app/image2.png",
-      "jobTitle": "Full Stack Developer",
-      "sameAs": [
-        "https://github.com/Ankulkumar0001",
-        "https://x.com/ankulkumar0001"
-      ],
-      "description": "Portfolio of Ankul Kumar, a passionate Full Stack Developer specializing in ASP.NET Core, C#, JavaScript, and modern web technologies."
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://ankulkumar01.netlify.app#person",
+          "name": "Ankul Kumar",
+          "url": "https://ankulkumar01.netlify.app",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://ankulkumar01.netlify.app/image2.png",
+            "width": 300,
+            "height": 300
+          },
+          "jobTitle": "Full Stack Developer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance Developer"
+          },
+          "sameAs": [
+            "https://github.com/Ankulkumar0001",
+            "https://x.com/ankulkumar0001"
+          ],
+          "description": "Portfolio of Ankul Kumar, a passionate Full Stack Developer specializing in ASP.NET Core, C#, JavaScript, and modern web technologies."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://ankulkumar01.netlify.app#website",
+          "url": "https://ankulkumar01.netlify.app",
+          "name": "Ankul Kumar - Full Stack Developer Portfolio",
+          "description": "Portfolio of Ankul Kumar, a passionate Full Stack Developer",
+          "creator": {
+            "@id": "https://ankulkumar01.netlify.app#person"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://ankulkumar01.netlify.app/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://ankulkumar01.netlify.app"
+            }
+          ]
+        }
+      ]
     }
     </script>
 
