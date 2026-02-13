@@ -1,3 +1,17 @@
+// Preloader Hiding Logic (at the top for immediate setup)
+function hideLoader() {
+    const loader = document.getElementById('loader');
+    if (loader) {
+        loader.style.opacity = '0';
+        loader.style.visibility = 'hidden';
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 700);
+    }
+}
+window.addEventListener('load', hideLoader);
+setTimeout(hideLoader, 5000); // Fail-safe fallback
+
 const menuBtn = document.getElementById('menuBtn');
 const closeBtn = document.getElementById('closeBtn');
 const offCanvas = document.getElementById('offCanvas');
@@ -6,6 +20,7 @@ const menuPanel = document.getElementById('menuPanel');
 const menuLinks = document.querySelectorAll('.menu-link');
 
 function openMenu() {
+    if (!offCanvas || !overlay || !menuPanel) return;
     offCanvas.classList.remove('hidden');
     setTimeout(() => {
         overlay.classList.remove('opacity-0');
@@ -14,14 +29,15 @@ function openMenu() {
 }
 
 function closeMenu() {
+    if (!overlay || !menuPanel || !offCanvas) return;
     overlay.classList.add('opacity-0');
     menuPanel.classList.add('translate-x-full');
     setTimeout(() => offCanvas.classList.add('hidden'), 300);
 }
 
-menuBtn.addEventListener('click', openMenu);
-closeBtn.addEventListener('click', closeMenu);
-overlay.addEventListener('click', closeMenu);
+if (menuBtn) menuBtn.addEventListener('click', openMenu);
+if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+if (overlay) overlay.addEventListener('click', closeMenu);
 menuLinks.forEach(link => link.addEventListener('click', closeMenu));
 
 const greetings = ['Hello', 'Namaste', 'Bonjour', 'Hola', 'Konnichiwa', 'Ciao'];
@@ -189,7 +205,7 @@ function closeLightboxFunc() {
     }, 300);
 }
 
-closeLightbox.addEventListener('click', closeLightboxFunc);
+if (closeLightbox) closeLightbox.addEventListener('click', closeLightboxFunc);
 
 const prevHandler = () => {
     currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
@@ -200,22 +216,27 @@ const nextHandler = () => {
     showImage(currentIndex);
 };
 
-prevImage.addEventListener('click', prevHandler);
-document.getElementById('prevImageMobile').addEventListener('click', prevHandler);
-nextImage.addEventListener('click', nextHandler);
-document.getElementById('nextImageMobile').addEventListener('click', nextHandler);
+if (prevImage) prevImage.addEventListener('click', prevHandler);
+const prevImageMobile = document.getElementById('prevImageMobile');
+if (prevImageMobile) prevImageMobile.addEventListener('click', prevHandler);
 
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) {
-        closeLightboxFunc();
-    }
-});
+if (nextImage) nextImage.addEventListener('click', nextHandler);
+const nextImageMobile = document.getElementById('nextImageMobile');
+if (nextImageMobile) nextImageMobile.addEventListener('click', nextHandler);
+
+if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightboxFunc();
+        }
+    });
+}
 
 document.addEventListener('keydown', (e) => {
-    if (lightbox.classList.contains('flex')) {
+    if (lightbox && lightbox.classList.contains('flex')) {
         if (e.key === 'Escape') closeLightboxFunc();
-        if (e.key === 'ArrowLeft') prevImage.click();
-        if (e.key === 'ArrowRight') nextImage.click();
+        if (e.key === 'ArrowLeft' && prevImage) prevImage.click();
+        if (e.key === 'ArrowRight' && nextImage) nextImage.click();
     }
 });
 
@@ -237,6 +258,7 @@ let currentExpData = {};
 document.querySelectorAll('.experience-img').forEach((img) => {
     img.addEventListener('click', function () {
         const gallery = this.closest('.experience-gallery');
+        if (!gallery) return;
         currentExpImages = Array.from(gallery.querySelectorAll('.experience-img'));
         currentExpIndex = currentExpImages.indexOf(this);
         currentExpData = {
@@ -252,6 +274,7 @@ document.querySelectorAll('.experience-img').forEach((img) => {
 });
 
 function showExpImage(index) {
+    if (!expModalImage || !expImageCounter || !currentExpData) return;
     expModalImage.style.opacity = '0';
     expModalImage.style.transform = 'scale(0.95)';
     setTimeout(() => {
@@ -268,6 +291,7 @@ function showExpImage(index) {
 }
 
 function openExpModal() {
+    if (!expModal) return;
     expModal.classList.remove('hidden');
     expModal.classList.add('flex');
     document.body.style.overflow = 'hidden';
@@ -275,6 +299,7 @@ function openExpModal() {
 }
 
 function closeExpModalFunc() {
+    if (!expModal) return;
     expModal.style.opacity = '0';
     document.body.style.overflow = '';
     setTimeout(() => {
@@ -283,23 +308,29 @@ function closeExpModalFunc() {
     }, 300);
 }
 
-closeExpModal.addEventListener('click', closeExpModalFunc);
-prevExpImage.addEventListener('click', () => {
-    currentExpIndex = (currentExpIndex - 1 + currentExpImages.length) % currentExpImages.length;
-    showExpImage(currentExpIndex);
-});
-nextExpImage.addEventListener('click', () => {
-    currentExpIndex = (currentExpIndex + 1) % currentExpImages.length;
-    showExpImage(currentExpIndex);
-});
-expModal.addEventListener('click', (e) => {
-    if (e.target === expModal) closeExpModalFunc();
-});
+if (closeExpModal) closeExpModal.addEventListener('click', closeExpModalFunc);
+if (prevExpImage) {
+    prevExpImage.addEventListener('click', () => {
+        currentExpIndex = (currentExpIndex - 1 + currentExpImages.length) % currentExpImages.length;
+        showExpImage(currentExpIndex);
+    });
+}
+if (nextExpImage) {
+    nextExpImage.addEventListener('click', () => {
+        currentExpIndex = (currentExpIndex + 1) % currentExpImages.length;
+        showExpImage(currentExpIndex);
+    });
+}
+if (expModal) {
+    expModal.addEventListener('click', (e) => {
+        if (e.target === expModal) closeExpModalFunc();
+    });
+}
 document.addEventListener('keydown', (e) => {
-    if (expModal.classList.contains('flex')) {
+    if (expModal && expModal.classList.contains('flex')) {
         if (e.key === 'Escape') closeExpModalFunc();
-        if (e.key === 'ArrowLeft') prevExpImage.click();
-        if (e.key === 'ArrowRight') nextExpImage.click();
+        if (e.key === 'ArrowLeft' && prevExpImage) prevExpImage.click();
+        if (e.key === 'ArrowRight' && nextExpImage) nextExpImage.click();
     }
 });
 
@@ -307,6 +338,7 @@ const backToTop = document.getElementById('backToTop');
 const heroSection = document.getElementById('home');
 
 window.addEventListener('scroll', function () {
+    if (!heroSection || !backToTop) return;
     const heroHeight = heroSection.offsetHeight;
     if (window.scrollY > heroHeight) {
         backToTop.classList.remove('opacity-0', 'invisible');
@@ -346,57 +378,65 @@ window.addEventListener('scroll', function () {
 
 
 $(document).ready(function () {
-    $('.carousel-ltr').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplaySpeed: 5000,
-        autoplayHoverPause: false,
-        responsive: {
-            0: { items: 2 },
-            600: { items: 3 },
-            1000: { items: 5 }
-        }
-    });
-    $('.carousel-rtl').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplaySpeed: 5000,
-        autoplayHoverPause: false,
-        rtl: true,
-        responsive: {
-            0: { items: 2 },
-            600: { items: 3 },
-            1000: { items: 5 }
-        }
-    });
+    if (typeof $ !== 'undefined' && $.fn.owlCarousel) {
+        $('.carousel-ltr').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplaySpeed: 5000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: { items: 2 },
+                600: { items: 3 },
+                1000: { items: 5 }
+            }
+        });
+        $('.carousel-rtl').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplaySpeed: 5000,
+            autoplayHoverPause: false,
+            rtl: true,
+            responsive: {
+                0: { items: 2 },
+                600: { items: 3 },
+                1000: { items: 5 }
+            }
+        });
+    }
 });
 
 let currentProjectRow = 0;
 const viewMoreBtn = document.getElementById('viewMoreBtn');
-viewMoreBtn.addEventListener('click', function () {
-    if (currentProjectRow === 0) {
-        document.querySelectorAll('.project-row-2').forEach(el => el.classList.remove('hidden'));
-        currentProjectRow = 1;
-        viewMoreBtn.querySelector('span:last-child').innerHTML = 'View More Projects <i class="fas fa-chevron-down group-hover:animate-bounce"></i>';
-    } else if (currentProjectRow === 1) {
-        document.querySelectorAll('.project-row-3').forEach(el => el.classList.remove('hidden'));
-        currentProjectRow = 2;
-        viewMoreBtn.querySelector('span:last-child').innerHTML = 'View Less <i class="fas fa-chevron-up group-hover:animate-bounce"></i>';
-    } else {
-        document.querySelectorAll('.project-row-2, .project-row-3').forEach(el => el.classList.add('hidden'));
-        currentProjectRow = 0;
-        viewMoreBtn.querySelector('span:last-child').innerHTML = 'View More Projects <i class="fas fa-chevron-down group-hover:animate-bounce"></i>';
-        document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
-    }
-});
+if (viewMoreBtn) {
+    viewMoreBtn.addEventListener('click', function () {
+        if (currentProjectRow === 0) {
+            document.querySelectorAll('.project-row-2').forEach(el => el.classList.remove('hidden'));
+            currentProjectRow = 1;
+            const span = viewMoreBtn.querySelector('span:last-child');
+            if (span) span.innerHTML = 'View More Projects <i class="fas fa-chevron-down group-hover:animate-bounce"></i>';
+        } else if (currentProjectRow === 1) {
+            document.querySelectorAll('.project-row-3').forEach(el => el.classList.remove('hidden'));
+            currentProjectRow = 2;
+            const span = viewMoreBtn.querySelector('span:last-child');
+            if (span) span.innerHTML = 'View Less <i class="fas fa-chevron-up group-hover:animate-bounce"></i>';
+        } else {
+            document.querySelectorAll('.project-row-2, .project-row-3').forEach(el => el.classList.add('hidden'));
+            currentProjectRow = 0;
+            const span = viewMoreBtn.querySelector('span:last-child');
+            if (span) span.innerHTML = 'View More Projects <i class="fas fa-chevron-down group-hover:animate-bounce"></i>';
+            const projectSection = document.getElementById('projects');
+            if (projectSection) projectSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+}
 
 const projectModal = document.getElementById('projectModal');
 const closeProjectModal = document.getElementById('closeProjectModal');
@@ -842,10 +882,12 @@ const nextGalleryHandler = () => {
     showGalleryImage(currentGalleryIndex);
 };
 
-prevImage.addEventListener('click', prevGalleryHandler);
-nextImage.addEventListener('click', nextGalleryHandler);
-document.getElementById('prevImageMobile').addEventListener('click', prevGalleryHandler);
-document.getElementById('nextImageMobile').addEventListener('click', nextGalleryHandler);
+if (prevImage) prevImage.addEventListener('click', prevGalleryHandler);
+if (nextImage) nextImage.addEventListener('click', nextGalleryHandler);
+const prevGalleryMobile = document.getElementById('prevImageMobile');
+if (prevGalleryMobile) prevGalleryMobile.addEventListener('click', prevGalleryHandler);
+const nextGalleryMobile = document.getElementById('nextImageMobile');
+if (nextGalleryMobile) nextGalleryMobile.addEventListener('click', nextGalleryHandler);
 
 document.querySelectorAll('.gallery-like-btn').forEach(btn => {
     const galleryId = btn.dataset.galleryId;
@@ -922,20 +964,5 @@ window.addEventListener('scroll', () => {
 });
 
 
-// Preloader Hiding Logic
-function hideLoader() {
-    const loader = document.getElementById('loader');
-    if (loader) {
-        loader.style.opacity = '0';
-        loader.style.visibility = 'hidden';
-        setTimeout(() => {
-            loader.style.display = 'none';
-        }, 700);
-    }
-}
 
-// Hide loader when window is fully loaded
-window.addEventListener('load', hideLoader);
-
-// Fail-safe: Hide loader after a maximum of 5 seconds regardless of resource loading
-setTimeout(hideLoader, 5000);
+// Preloader logic moved to top for robustness
