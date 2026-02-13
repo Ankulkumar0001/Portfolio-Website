@@ -115,7 +115,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/index.css?v=1.1">
     <link rel="icon" type="image/x-icon" href="/cropped_circle_image.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
@@ -133,6 +133,24 @@
     <!-- Premium Preloader -->
     <div id="loader"
         class="fixed inset-0 z-[100] flex items-center justify-center bg-gray-950 transition-all duration-700">
+        <script>
+            function forceHideLoader() {
+                const loader = document.getElementById('loader');
+                if (loader) {
+                    loader.classList.add('loader-hide');
+                    // Backup in case the class doesn't apply
+                    loader.style.opacity = '0';
+                    loader.style.visibility = 'hidden';
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 700);
+                }
+            }
+            // Listen for window load
+            window.addEventListener('load', forceHideLoader);
+            // Absolute fail-safe: hide after 5 seconds no matter what
+            setTimeout(forceHideLoader, 5000);
+        </script>
         <!-- Floating Particles Background -->
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
             <div class="particle w-2 h-2 bg-indigo-500/30 absolute top-1/4 left-1/4 rounded-full blur-sm"></div>
@@ -2260,7 +2278,7 @@
                 });
             }
         </script>
-        <script src="index.js"></script>
+        <script src="index.js?v=1.1"></script>
 
 
         <!-- Footer -->

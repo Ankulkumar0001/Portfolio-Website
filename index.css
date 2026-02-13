@@ -16,6 +16,13 @@
 }
 
 /* Loader Animations */
+.loader-hide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    display: none !important;
+    transition: all 0.7s ease-in-out;
+}
+
 @keyframes particleMove {
     0% {
         transform: translateY(0) translateX(0) scale(1);
