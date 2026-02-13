@@ -921,3 +921,15 @@ window.addEventListener('scroll', () => {
     }
 });
 
+
+// Preloader Hiding Logic
+window.addEventListener('load', function () {
+    const loader = document.getElementById('loader');
+    if (loader) {
+        loader.style.opacity = '0';
+        loader.style.visibility = 'hidden';
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 700);
+    }
+});

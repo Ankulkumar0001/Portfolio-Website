@@ -12,7 +12,7 @@
         content="Ankul Kumar, Full Stack Developer, .NET Developer, Web Developer, Portfolio, ASP.NET Core, JavaScript, C#, React, Lucknow Developer">
     <meta name="author" content="Ankul Kumar">
     <meta name="theme-color" content="#1a202c">
-    
+
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="fjWLwWUhqwNLTY6VolvgrkY598fUbQdXczgMIoD_jzM" />
     <meta name="google-site-verification" content="google99ad0a2510c6ce05" />
@@ -130,6 +130,53 @@
 </head>
 
 <body class="bg-gray-50 overflow-x-hidden">
+    <!-- Premium Preloader -->
+    <div id="loader"
+        class="fixed inset-0 z-[100] flex items-center justify-center bg-gray-950 transition-all duration-700">
+        <!-- Floating Particles Background -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="particle w-2 h-2 bg-indigo-500/30 absolute top-1/4 left-1/4 rounded-full blur-sm"></div>
+            <div class="particle w-3 h-3 bg-purple-500/20 absolute top-3/4 left-1/3 rounded-full blur-sm"
+                style="animation-delay: -2s;"></div>
+            <div class="particle w-2 h-2 bg-pink-500/30 absolute top-1/2 left-3/4 rounded-full blur-sm"
+                style="animation-delay: -4s;"></div>
+            <div class="particle w-4 h-4 bg-indigo-500/20 absolute top-1/4 left-2/3 rounded-full blur-sm"
+                style="animation-delay: -6s;"></div>
+            <div class="particle w-2 h-2 bg-purple-500/30 absolute top-2/3 left-1/4 rounded-full blur-sm"
+                style="animation-delay: -1s;"></div>
+            <div class="particle w-3 h-3 bg-pink-500/20 absolute top-1/3 left-1/2 rounded-full blur-sm"
+                style="animation-delay: -3s;"></div>
+        </div>
+
+        <div class="relative flex flex-col items-center">
+            <!-- Animated Background Glow -->
+            <div class="absolute -inset-20 bg-indigo-600/20 rounded-full blur-[100px] animate-pulse"></div>
+
+            <!-- Outer Rotating Rings -->
+            <div class="absolute inset-0 -m-8 rounded-full border-t-2 border-indigo-500/30 animate-spin-slow"></div>
+            <div class="absolute inset-0 -m-12 rounded-full border-b-2 border-purple-500/20 animate-spin-reverse"></div>
+
+            <!-- Glass Card with Name -->
+            <div
+                class="bg-white/5 backdrop-blur-2xl border border-white/10 p-8 md:p-12 rounded-[2rem] shadow-[0_0_50px_rgba(99,102,241,0.2)] relative text-center min-w-[300px] mx-4">
+                <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 rounded-[2rem]">
+                </div>
+                <h1 class="text-4xl md:text-6xl font-black bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent relative z-10 animate-pulse shimmer-text"
+                    style="font-family: 'Pacifico', cursive; line-height: 1.4; padding: 0 10px;">
+                    Ankul Kumar
+                </h1>
+                <p class="text-gray-500 text-xs font-bold uppercase tracking-[0.3em] mt-4 relative z-10 opacity-70">
+                    Portfolio Loading</p>
+            </div>
+
+            <!-- Staggered Dots -->
+            <div class="mt-12 flex gap-3">
+                <div class="w-2.5 h-2.5 rounded-full bg-indigo-500 animate-bounce"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-purple-500 animate-bounce [animation-delay:-0.15s]"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-pink-500 animate-bounce [animation-delay:-0.3s]"></div>
+            </div>
+        </div>
+    </div>
     <style>
         html,
         body {
@@ -673,12 +720,12 @@
                 class="fab fa-docker text-blue-400 text-4xl absolute top-1/3 left-1/3 animate-float-icon-3 opacity-20"></i>
         </div>
         <div class="container mx-auto max-w-6xl relative z-10">
-            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent animate-fade-in"
+            <h2 class="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"
                 data-aos="fade-down">
                 About Me</h2>
             <div class="grid md:grid-cols-2 gap-16 items-start">
                 <div class="space-y-8 md:order-1 order-1">
-                    <div class="flex justify-center animate-slide-in-left mt-4 relative" data-aos="fade-right">
+                    <div class="flex justify-center mt-4 relative" data-aos="fade-right">
                         <!-- Floating Mini Cards Around Image -->
                         <div class="absolute left-0 top-1/4 bg-white/90 backdrop-blur-sm p-2 z-10 rounded-lg shadow-lg border border-yellow-200 animate-float-icon-1 flex items-center gap-2"
                             style="transform: translateX(-5px);">
@@ -766,17 +813,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="space-y-6 animate-slide-in-right md:order-2 order-2" data-aos="fade-up">
-                    <p
-                        class="text-gray-800 text-lg leading-relaxed text-justify transform hover:translate-x-2 transition duration-300 about-para-1">
+                <div class="space-y-6 md:order-2 order-2">
+                    <p class="text-gray-800 text-lg leading-relaxed text-justify transform hover:translate-x-2 transition duration-300 about-para-1"
+                        data-aos="fade-up" data-aos-delay="100">
                         <span
                             class="text-6xl font-bold bg-gradient-to-br from-indigo-600 to-purple-600 bg-clip-text text-transparent float-left mr-3 leading-none animate-bounce-slow">I</span>
                         am a dedicated Full Stack Developer currently pursuing a Diploma in Computer Science. My
                         educational background, including schooling through the CBSE Board, has built a strong
                         foundation for my career.
                     </p>
-                    <p
-                        class="text-gray-700 text-lg leading-relaxed text-justify border-l-4 border-indigo-600 pl-4 hover:border-l-8 hover:pl-6 transition-all duration-300 hover:bg-white/50 hover:shadow-lg rounded-r-lg py-2 about-para-2">
+                    <p class="text-gray-700 text-lg leading-relaxed text-justify border-l-4 border-indigo-600 pl-4 hover:border-l-8 hover:pl-6 transition-all duration-300 hover:bg-white/50 hover:shadow-lg rounded-r-lg py-2 about-para-2"
+                        data-aos="fade-up" data-aos-delay="200">
                         I specialize in <span
                             class="font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer">ASP.Net
                             Core MVC</span>, <span
@@ -786,16 +833,16 @@
                         for backend development. My frontend expertise includes HTML, CSS, JavaScript, Bootstrap, and
                         Tailwind. I also manage MySQL databases and use Visual Studio Code and Xampp.
                     </p>
-                    <p
-                        class="text-gray-700 text-lg leading-relaxed text-justify transform hover:translate-x-2 transition duration-300 hover:text-gray-900 about-para-3">
+                    <p class="text-gray-700 text-lg leading-relaxed text-justify transform hover:translate-x-2 transition duration-300 hover:text-gray-900 about-para-3"
+                        data-aos="fade-up" data-aos-delay="300">
                         I have successfully completed a six-month apprenticeship and summer training at <span
                             class="font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-pink-600 transition-all cursor-pointer">DigiCoders
                             Technologies</span>. During this time, I applied my technical skills to build practical
                         full-stack applications, ensuring that I can deliver professional results in a real-world
                         development environment.
                     </p>
-                    <p
-                        class="text-gray-700 text-lg leading-relaxed text-justify border-l-4 border-purple-600 pl-4 hover:border-l-8 hover:pl-6 transition-all duration-300 hover:bg-white/50 hover:shadow-lg rounded-r-lg py-2 about-para-4">
+                    <p class="text-gray-700 text-lg leading-relaxed text-justify border-l-4 border-purple-600 pl-4 hover:border-l-8 hover:pl-6 transition-all duration-300 hover:bg-white/50 hover:shadow-lg rounded-r-lg py-2 about-para-4"
+                        data-aos="fade-up" data-aos-delay="400">
                         I am committed to growth, having earned certificates in coding competitions and quizzes. I focus
                         on delivering clean UI/UX and stay updated on modern frameworks. I am ready to contribute my
                         technical skills to impactful projects.
@@ -2253,12 +2300,12 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init({
-                // duration: 1000, // Smoother animation
-                // easing: 'ease-in-out', // Smoother easing
-                // once: true, // Animation happens only once
-                // offset: 100, // Trigger animation a bit later
-                // mirror: false, // Don't animate out when scrolling past
-                // anchorPlacement: 'top-bottom', // Trigger when top of element hits bottom of viewport
+                duration: 1000, // Smoother animation
+                easing: 'ease-out-quad', // Smoother easing
+                once: true, // Animation happens only once
+                offset: 100, // Trigger animation a bit later
+                mirror: false, // Don't animate out when scrolling past
+                anchorPlacement: 'top-bottom', // Trigger when top of element hits bottom of viewport
             });
 
             // Disable Right Click
