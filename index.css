@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 @keyframes radiation {
     0% {
         transform: scale(1);
