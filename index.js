@@ -923,7 +923,7 @@ window.addEventListener('scroll', () => {
 
 
 // Preloader Hiding Logic
-window.addEventListener('load', function () {
+function hideLoader() {
     const loader = document.getElementById('loader');
     if (loader) {
         loader.style.opacity = '0';
@@ -932,4 +932,10 @@ window.addEventListener('load', function () {
             loader.style.display = 'none';
         }, 700);
     }
-});
+}
+
+// Hide loader when window is fully loaded
+window.addEventListener('load', hideLoader);
+
+// Fail-safe: Hide loader after a maximum of 5 seconds regardless of resource loading
+setTimeout(hideLoader, 5000);

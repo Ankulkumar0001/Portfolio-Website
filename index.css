@@ -15,6 +15,57 @@
     }
 }
 
+/* Loader Animations */
+@keyframes particleMove {
+    0% {
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100px) translateX(20px) scale(0.5);
+        opacity: 0;
+    }
+}
+
+.particle {
+    animation: particleMove 3s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.shimmer-text {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shimmer 2s infinite linear;
+}
+
+.animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+}
+
+.animate-spin-reverse {
+    animation: spin-reverse 6s linear infinite;
+}
+
 #shareBtn .radiation-wave {
     animation: radiation 2s infinite;
 }
