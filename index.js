@@ -13,6 +13,20 @@ window.addEventListener('load', hideLoader);
 setTimeout(hideLoader, 5000); // Fail-safe fallback
 const likeSound = new Audio('like.wav');
 
+// Audio unlock mechanism for mobile - must be triggered by user interaction
+const unlockAudio = () => {
+    likeSound.play().then(() => {
+        // Audio is now "unlocked"
+        likeSound.pause();
+        likeSound.currentTime = 0;
+    }).catch(e => console.log("Audio unlock failed:", e));
+    document.removeEventListener('click', unlockAudio);
+    document.removeEventListener('touchstart', unlockAudio);
+};
+document.addEventListener('click', unlockAudio);
+document.addEventListener('touchstart', unlockAudio);
+
+
 const menuBtn = document.getElementById('menuBtn');
 const closeBtn = document.getElementById('closeBtn');
 const offCanvas = document.getElementById('offCanvas');
