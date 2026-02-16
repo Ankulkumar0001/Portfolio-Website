@@ -11,6 +11,7 @@ function hideLoader() {
 }
 window.addEventListener('load', hideLoader);
 setTimeout(hideLoader, 5000); // Fail-safe fallback
+const likeSound = new Audio('like.wav');
 
 const menuBtn = document.getElementById('menuBtn');
 const closeBtn = document.getElementById('closeBtn');
@@ -141,6 +142,11 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.3 });
 observer.observe(aboutSection);
+
+function playLikeSound() {
+    likeSound.currentTime = 0;
+    likeSound.play().catch(err => console.log('Audio play failed:', err));
+}
 
 const lightbox = document.getElementById('imageLightbox');
 const lightboxImage = document.getElementById('lightboxImage');
@@ -651,6 +657,7 @@ function initializeProjectEvents() {
             const currentLikes = parseInt(count.textContent);
             const currentlyLiked = heart.classList.contains('fas');
             heart.classList.add('heart-animate');
+            playLikeSound();
             setTimeout(() => heart.classList.remove('heart-animate'), 600);
             if (!currentlyLiked) createBubbles(this);
             if (currentlyLiked) {
@@ -705,6 +712,7 @@ document.querySelectorAll('.cert-like-btn').forEach(btn => {
         const currentLikes = parseInt(count.textContent);
         const currentlyLiked = heart.classList.contains('fas');
         heart.classList.add('heart-animate');
+        playLikeSound();
         setTimeout(() => heart.classList.remove('heart-animate'), 600);
         if (!currentlyLiked) createBubbles(this);
         if (currentlyLiked) {
@@ -752,6 +760,7 @@ funFactLikeBtn.addEventListener('click', function () {
     const currentLikes = parseInt(funFactLikeCount.textContent);
     const currentlyLiked = funFactHeart.classList.contains('fas');
     funFactHeart.classList.add('heart-animate');
+    playLikeSound();
     setTimeout(() => funFactHeart.classList.remove('heart-animate'), 600);
     if (!currentlyLiked) createBubbles(this);
     if (currentlyLiked) {
@@ -810,6 +819,7 @@ lightboxLikeBtn.addEventListener('click', function (e) {
     const currentLikes = parseInt(lightboxLikeCount.textContent);
     const currentlyLiked = lightboxHeart.classList.contains('fas');
     lightboxHeart.classList.add('heart-animate');
+    playLikeSound();
     setTimeout(() => lightboxHeart.classList.remove('heart-animate'), 600);
     if (!currentlyLiked) createBubbles(this);
     if (currentlyLiked) {
@@ -905,6 +915,7 @@ document.querySelectorAll('.gallery-like-btn').forEach(btn => {
         const currentLikes = parseInt(count.textContent);
         const currentlyLiked = heart.classList.contains('fas');
         heart.classList.add('heart-animate');
+        playLikeSound();
         setTimeout(() => heart.classList.remove('heart-animate'), 600);
         if (!currentlyLiked) createBubbles(this);
         if (currentlyLiked) {
@@ -961,6 +972,78 @@ window.addEventListener('scroll', () => {
             }
         }
     }
+});
+
+// Education Like Logic
+document.querySelectorAll('.edu-like-btn').forEach(btn => {
+    const eduId = btn.dataset.eduId;
+    const heart = btn.querySelector('.edu-heart');
+    const count = btn.querySelector('.edu-count');
+    const likeCount = parseInt(localStorage.getItem(eduId) || '0');
+    const isLiked = localStorage.getItem(`${eduId}_liked`) === 'true';
+    count.textContent = likeCount;
+    if (isLiked) {
+        heart.classList.remove('far');
+        heart.classList.add('fas');
+    }
+    btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const currentLikes = parseInt(count.textContent);
+        const currentlyLiked = heart.classList.contains('fas');
+        heart.classList.add('heart-animate');
+        playLikeSound();
+        setTimeout(() => heart.classList.remove('heart-animate'), 600);
+        if (!currentlyLiked) createBubbles(this);
+        if (currentlyLiked) {
+            count.textContent = currentLikes - 1;
+            heart.classList.remove('fas');
+            heart.classList.add('far');
+            localStorage.setItem(eduId, currentLikes - 1);
+            localStorage.setItem(`${eduId}_liked`, 'false');
+        } else {
+            count.textContent = currentLikes + 1;
+            heart.classList.remove('far');
+            heart.classList.add('fas');
+            localStorage.setItem(eduId, currentLikes + 1);
+            localStorage.setItem(`${eduId}_liked`, 'true');
+        }
+    });
+});
+
+// Experience Like Logic
+document.querySelectorAll('.exp-like-btn').forEach(btn => {
+    const expId = btn.dataset.expId;
+    const heart = btn.querySelector('.exp-heart');
+    const count = btn.querySelector('.exp-count');
+    const likeCount = parseInt(localStorage.getItem(expId) || '0');
+    const isLiked = localStorage.getItem(`${expId}_liked`) === 'true';
+    count.textContent = likeCount;
+    if (isLiked) {
+        heart.classList.remove('far');
+        heart.classList.add('fas');
+    }
+    btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const currentLikes = parseInt(count.textContent);
+        const currentlyLiked = heart.classList.contains('fas');
+        heart.classList.add('heart-animate');
+        playLikeSound();
+        setTimeout(() => heart.classList.remove('heart-animate'), 600);
+        if (!currentlyLiked) createBubbles(this);
+        if (currentlyLiked) {
+            count.textContent = currentLikes - 1;
+            heart.classList.remove('fas');
+            heart.classList.add('far');
+            localStorage.setItem(expId, currentLikes - 1);
+            localStorage.setItem(`${expId}_liked`, 'false');
+        } else {
+            count.textContent = currentLikes + 1;
+            heart.classList.remove('far');
+            heart.classList.add('fas');
+            localStorage.setItem(expId, currentLikes + 1);
+            localStorage.setItem(`${expId}_liked`, 'true');
+        }
+    });
 });
 
 
