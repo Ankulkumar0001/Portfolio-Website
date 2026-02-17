@@ -792,6 +792,87 @@ funFactLikeBtn.addEventListener('click', function () {
     }
 });
 
+const serviceModal = document.getElementById('serviceModal');
+const closeServiceModal = document.getElementById('closeServiceModal');
+const serviceNameInput = document.getElementById('serviceNameInput');
+const serviceRequestForm = document.getElementById('serviceRequestForm');
+
+document.querySelectorAll('.request-service-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const service = btn.getAttribute('data-service');
+        if (serviceNameInput) serviceNameInput.value = service;
+        if (serviceModal) {
+            serviceModal.classList.remove('hidden');
+            serviceModal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+                serviceModal.style.opacity = '1';
+                serviceModal.querySelector('div').classList.remove('scale-95');
+                serviceModal.querySelector('div').classList.add('scale-100');
+            }, 10);
+        }
+    });
+});
+
+function closeServiceModalFunc() {
+    if (serviceModal) {
+        serviceModal.style.opacity = '0';
+        serviceModal.querySelector('div').classList.remove('scale-100');
+        serviceModal.querySelector('div').classList.add('scale-95');
+        document.body.style.overflow = '';
+        setTimeout(() => {
+            serviceModal.classList.add('hidden');
+            serviceModal.classList.remove('flex');
+        }, 300);
+    }
+}
+
+if (closeServiceModal) closeServiceModal.addEventListener('click', closeServiceModalFunc);
+
+if (serviceModal) {
+    serviceModal.addEventListener('click', (e) => {
+        if (e.target === serviceModal) closeServiceModalFunc();
+    });
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeServiceModalFunc();
+});
+
+if (serviceRequestForm) {
+    serviceRequestForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = serviceRequestForm.querySelector('button[type="submit"]');
+        const originalContent = btn.innerHTML;
+
+        btn.disabled = true;
+        btn.innerHTML = `
+            <span class="relative z-10 flex items-center justify-center gap-3">
+                <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Processing...
+            </span>
+        `;
+
+        // Simulate API call
+        setTimeout(() => {
+            alert('Thank you! Your service request for "' + serviceNameInput.value + '" has been submitted. I will contact you soon!');
+            serviceRequestForm.reset();
+            closeServiceModalFunc();
+            btn.disabled = false;
+            btn.innerHTML = `
+                <span class="relative z-10 flex items-center justify-center gap-3">
+                    Send Request <i class="fas fa-paper-plane group-hover/submit:translate-x-1 group-hover/submit:-translate-y-1 transition-transform"></i>
+                </span>
+                <div class="absolute inset-0 bg-white/20 translate-y-full group-hover/submit:translate-y-0 transition-transform duration-300"></div>
+            `;
+        }, 1500);
+    });
+}
+
 let currentGalleryRow = 0;
 const viewMoreGalleryBtn = document.getElementById('viewMoreGalleryBtn');
 viewMoreGalleryBtn.addEventListener('click', function () {
