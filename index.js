@@ -797,23 +797,38 @@ const closeServiceModal = document.getElementById('closeServiceModal');
 const serviceNameInput = document.getElementById('serviceNameInput');
 const serviceRequestForm = document.getElementById('serviceRequestForm');
 
-document.querySelectorAll('.request-service-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const service = btn.getAttribute('data-service');
-        if (serviceNameInput) serviceNameInput.value = service;
-        if (serviceModal) {
-            serviceModal.classList.remove('hidden');
-            serviceModal.classList.add('flex');
-            document.body.style.overflow = 'hidden';
-            setTimeout(() => {
-                serviceModal.style.opacity = '1';
-                serviceModal.querySelector('div').classList.remove('scale-95');
-                serviceModal.querySelector('div').classList.add('scale-100');
-            }, 10);
-        }
-    });
-});
+let lastServiceTriggerTime = 0;
+const handleServiceRequest = (e) => {
+    // Prevent double trigger (tap and click)
+    const now = Date.now();
+    if (now - lastServiceTriggerTime < 500) return;
+
+    const btn = e.target.closest('.request-service-btn');
+    if (!btn) return;
+
+    lastServiceTriggerTime = now;
+    e.preventDefault();
+    e.stopPropagation();
+
+    const service = btn.getAttribute('data-service');
+    if (serviceNameInput) serviceNameInput.value = service;
+    if (serviceModal) {
+        serviceModal.classList.remove('hidden');
+        serviceModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+        setTimeout(() => {
+            serviceModal.style.opacity = '1';
+            const modalDiv = serviceModal.querySelector('div');
+            if (modalDiv) {
+                modalDiv.classList.remove('scale-95');
+                modalDiv.classList.add('scale-100');
+            }
+        }, 10);
+    }
+};
+
+document.addEventListener('click', handleServiceRequest);
+document.addEventListener('touchstart', handleServiceRequest, { passive: false });
 
 function closeServiceModalFunc() {
     if (serviceModal) {
